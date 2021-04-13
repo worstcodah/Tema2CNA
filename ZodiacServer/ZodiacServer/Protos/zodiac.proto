@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option csharp_namespace = "ZodiacServer";
+
+package zodiac;
+
+
+service StarSignService {
+  
+  rpc GetStarSign (CalendarDate) returns (StarSign);
+}
+
+
+message CalendarDate {
+  string day = 1;
+  string month = 2;
+  string year = 3;
+}
+
+message StarSign {
+  string name = 1;
+}
