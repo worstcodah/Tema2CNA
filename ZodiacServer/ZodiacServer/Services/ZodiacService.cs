@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
+
 namespace ZodiacServer
 {
     public class ZodiacService : StarSignService.StarSignServiceBase
@@ -18,16 +19,16 @@ namespace ZodiacServer
 
 
        
-  
+
         public override Task<StarSign> GetStarSign(CalendarDate calendarDate, ServerCallContext context)
         {
-
             
 
 
-            return base.GetStarSign(calendarDate, context);
+
+                return base.GetStarSign(calendarDate, context);
         }
-        
+
 
     }
 }
