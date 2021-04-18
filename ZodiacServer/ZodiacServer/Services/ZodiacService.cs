@@ -36,7 +36,14 @@ namespace ZodiacServer
                 case "2":
                 case "02":
                     {
-                        break;
+                        var client = new WinterService.WinterStarSignService.WinterStarSignServiceClient(channel);
+                        var starSign = client.WinterStarSignRequest(new WinterService.CalendarDate
+                        {
+                            Day = calendarDate.Day,
+                            Month = calendarDate.Month,
+                            Year = calendarDate.Year
+                        });
+                        return Task.FromResult(new StarSignResponse { StarSign = (StarSign)starSign.StarSign });
                     }
                 case "3":
                 case "03":
@@ -45,7 +52,14 @@ namespace ZodiacServer
                 case "5":
                 case "05":
                     {
-                        break;
+                        var client = new SpringService.SpringStarSignService.SpringStarSignServiceClient(channel);
+                        var starSign = client.SpringStarSignRequest(new SpringService.CalendarDate
+                        {
+                            Day = calendarDate.Day,
+                            Month = calendarDate.Month,
+                            Year = calendarDate.Year
+                        });
+                        return Task.FromResult(new StarSignResponse { StarSign = (StarSign)starSign.StarSign });
                     }
                 case "6":
                 case "06":
@@ -54,15 +68,28 @@ namespace ZodiacServer
                 case "8":
                 case "08":
                     {
-                        break;
+                        var client = new SummerService.SummerStarSignService.SummerStarSignServiceClient(channel);
+                        var starSign = client.SummerStarSignRequest(new SummerService.CalendarDate
+                        {
+                            Day = calendarDate.Day,
+                            Month = calendarDate.Month,
+                            Year = calendarDate.Year
+                        });
+                        return Task.FromResult(new StarSignResponse { StarSign = (StarSign)starSign.StarSign });  
                     }
                 case "9":
                 case "09":
                 case "10":
                 case "11":
                     {
-
-                        break;
+                        var client = new AutumnService.AutumnStarSignService.AutumnStarSignServiceClient(channel);
+                        var starSign = client.AutumnStarSignRequest(new AutumnService.CalendarDate
+                        {
+                            Day = calendarDate.Day,
+                            Month = calendarDate.Month,
+                            Year = calendarDate.Year
+                        });
+                        return Task.FromResult(new StarSignResponse { StarSign = (StarSign)starSign.StarSign });                    
                     }
             }
 
