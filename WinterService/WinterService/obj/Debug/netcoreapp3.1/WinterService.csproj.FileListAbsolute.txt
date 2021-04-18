@@ -13,6 +13,7 @@ C:\repos\CNA\Tema2\WinterService\WinterService\bin\Debug\netcoreapp3.1\Grpc.Core
 C:\repos\CNA\Tema2\WinterService\WinterService\bin\Debug\netcoreapp3.1\Grpc.Net.Client.dll
 C:\repos\CNA\Tema2\WinterService\WinterService\bin\Debug\netcoreapp3.1\Grpc.Net.ClientFactory.dll
 C:\repos\CNA\Tema2\WinterService\WinterService\bin\Debug\netcoreapp3.1\Grpc.Net.Common.dll
+C:\repos\CNA\Tema2\WinterService\WinterService\obj\Debug\netcoreapp3.1\WinterService.csprojAssemblyReference.cache
 C:\repos\CNA\Tema2\WinterService\WinterService\obj\Debug\netcoreapp3.1\WinterService.AssemblyInfoInputs.cache
 C:\repos\CNA\Tema2\WinterService\WinterService\obj\Debug\netcoreapp3.1\WinterService.AssemblyInfo.cs
 C:\repos\CNA\Tema2\WinterService\WinterService\obj\Debug\netcoreapp3.1\WinterService.csproj.CoreCompileInputs.cache
@@ -25,4 +26,3 @@ C:\repos\CNA\Tema2\WinterService\WinterService\obj\Debug\netcoreapp3.1\WinterSer
 C:\repos\CNA\Tema2\WinterService\WinterService\obj\Debug\netcoreapp3.1\WinterService.dll
 C:\repos\CNA\Tema2\WinterService\WinterService\obj\Debug\netcoreapp3.1\WinterService.pdb
 C:\repos\CNA\Tema2\WinterService\WinterService\obj\Debug\netcoreapp3.1\WinterService.genruntimeconfig.cache
-C:\repos\CNA\Tema2\WinterService\WinterService\obj\Debug\netcoreapp3.1\WinterService.csprojAssemblyReference.cache

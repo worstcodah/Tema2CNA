@@ -25,4 +25,3 @@ C:\repos\CNA\Tema2\AutumnService\AutumnService\obj\Debug\netcoreapp3.1\AutumnSer
 C:\repos\CNA\Tema2\AutumnService\AutumnService\obj\Debug\netcoreapp3.1\AutumnService.dll
 C:\repos\CNA\Tema2\AutumnService\AutumnService\obj\Debug\netcoreapp3.1\AutumnService.pdb
 C:\repos\CNA\Tema2\AutumnService\AutumnService\obj\Debug\netcoreapp3.1\AutumnService.genruntimeconfig.cache
-C:\repos\CNA\Tema2\AutumnService\AutumnService\obj\Debug\netcoreapp3.1\AutumnService.csprojAssemblyReference.cache

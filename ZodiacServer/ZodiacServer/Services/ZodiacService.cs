@@ -27,7 +27,7 @@ namespace ZodiacServer
 
             //Zodii
             var channel = GrpcChannel.ForAddress(Constants.Constants.ChannelPort);
-            
+
             switch (calendarDate.Month)
             {
                 case "12":
@@ -52,8 +52,14 @@ namespace ZodiacServer
                 case "5":
                 case "05":
                     {
-
-                        break;
+                        var client = new SpringService.SpringStarSignService.SpringStarSignServiceClient(channel);
+                        var starSign = client.SpringStarSignRequest(new SpringService.CalendarDate
+                        {
+                            Day = calendarDate.Day,
+                            Month = calendarDate.Month,
+                            Year = calendarDate.Year
+                        });
+                        return Task.FromResult(new StarSignResponse { StarSign = (StarSign)starSign.StarSign });
                     }
                 case "6":
                 case "06":
@@ -82,7 +88,7 @@ namespace ZodiacServer
                     }
             }
 
-            return base.GetStarSignRequest(calendarDate, context);
+            return Task.FromResult(new StarSignResponse { StarSign = StarSign.Undefined });
         }
 
 

@@ -27,13 +27,11 @@ namespace SpringService {
             "ChNQcm90b3Mvc3ByaW5nLnByb3RvEgZ6b2RpYWMiOAoMQ2FsZW5kYXJEYXRl",
             "EgsKA2RheRgBIAEoCRINCgVtb250aBgCIAEoCRIMCgR5ZWFyGAMgASgJIjYK",
             "EFN0YXJTaWduUmVzcG9uc2USIgoIc3RhclNpZ24YASABKA4yEC56b2RpYWMu",
-            "U3RhclNpZ24qngEKCFN0YXJTaWduEgwKCFZBUlNBVE9SEAASCQoFUEVTVEkQ",
-            "ARIKCgZCRVJCRUMQAhIICgRUQVVSEAMSCgoGR0VNRU5JEAQSBwoDUkFDEAUS",
-            "BwoDTEVVEAYSDAoIRkVDSU9BUkEQBxILCgdCQUxBTlRBEAgSDAoIU0NPUlBJ",
-            "T04QCRINCglTQUdFVEFUT1IQChINCglDQVBSSUNPUk4QCzJgChVTcHJpbmdT",
-            "dGFyU2lnblNlcnZpY2USRwoVU3ByaW5nU3RhclNpZ25SZXF1ZXN0EhQuem9k",
-            "aWFjLkNhbGVuZGFyRGF0ZRoYLnpvZGlhYy5TdGFyU2lnblJlc3BvbnNlQhCq",
-            "Ag1TcHJpbmdTZXJ2aWNlYgZwcm90bzM="));
+            "U3RhclNpZ24qRgoIU3RhclNpZ24SDQoJVU5ERUZJTkVEEAASCQoFUEVTVEkQ",
+            "AhIKCgZCRVJCRUMQAxIICgRUQVVSEAQSCgoGR0VNRU5JEAUyYAoVU3ByaW5n",
+            "U3RhclNpZ25TZXJ2aWNlEkcKFVNwcmluZ1N0YXJTaWduUmVxdWVzdBIULnpv",
+            "ZGlhYy5DYWxlbmRhckRhdGUaGC56b2RpYWMuU3RhclNpZ25SZXNwb25zZUIQ",
+            "qgINU3ByaW5nU2VydmljZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::SpringService.StarSign), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -46,18 +44,11 @@ namespace SpringService {
   }
   #region Enums
   public enum StarSign {
-    [pbr::OriginalName("VARSATOR")] Varsator = 0,
-    [pbr::OriginalName("PESTI")] Pesti = 1,
-    [pbr::OriginalName("BERBEC")] Berbec = 2,
-    [pbr::OriginalName("TAUR")] Taur = 3,
-    [pbr::OriginalName("GEMENI")] Gemeni = 4,
-    [pbr::OriginalName("RAC")] Rac = 5,
-    [pbr::OriginalName("LEU")] Leu = 6,
-    [pbr::OriginalName("FECIOARA")] Fecioara = 7,
-    [pbr::OriginalName("BALANTA")] Balanta = 8,
-    [pbr::OriginalName("SCORPION")] Scorpion = 9,
-    [pbr::OriginalName("SAGETATOR")] Sagetator = 10,
-    [pbr::OriginalName("CAPRICORN")] Capricorn = 11,
+    [pbr::OriginalName("UNDEFINED")] Undefined = 0,
+    [pbr::OriginalName("PESTI")] Pesti = 2,
+    [pbr::OriginalName("BERBEC")] Berbec = 3,
+    [pbr::OriginalName("TAUR")] Taur = 4,
+    [pbr::OriginalName("GEMENI")] Gemeni = 5,
   }
 
   #endregion
@@ -284,7 +275,7 @@ namespace SpringService {
 
     /// <summary>Field number for the "starSign" field.</summary>
     public const int StarSignFieldNumber = 1;
-    private global::SpringService.StarSign starSign_ = global::SpringService.StarSign.Varsator;
+    private global::SpringService.StarSign starSign_ = global::SpringService.StarSign.Undefined;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::SpringService.StarSign StarSign {
       get { return starSign_; }
@@ -313,7 +304,7 @@ namespace SpringService {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (StarSign != global::SpringService.StarSign.Varsator) hash ^= StarSign.GetHashCode();
+      if (StarSign != global::SpringService.StarSign.Undefined) hash ^= StarSign.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -327,7 +318,7 @@ namespace SpringService {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (StarSign != global::SpringService.StarSign.Varsator) {
+      if (StarSign != global::SpringService.StarSign.Undefined) {
         output.WriteRawTag(8);
         output.WriteEnum((int) StarSign);
       }
@@ -339,7 +330,7 @@ namespace SpringService {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (StarSign != global::SpringService.StarSign.Varsator) {
+      if (StarSign != global::SpringService.StarSign.Undefined) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) StarSign);
       }
       if (_unknownFields != null) {
@@ -353,7 +344,7 @@ namespace SpringService {
       if (other == null) {
         return;
       }
-      if (other.StarSign != global::SpringService.StarSign.Varsator) {
+      if (other.StarSign != global::SpringService.StarSign.Undefined) {
         StarSign = other.StarSign;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);

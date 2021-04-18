@@ -1,0 +1,2 @@
+obj\Release\netcoreapp3.1/Winter.cs \
+obj\Release\netcoreapp3.1/WinterGrpc.cs: Protos/winter.proto

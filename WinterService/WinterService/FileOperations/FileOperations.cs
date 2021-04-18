@@ -8,7 +8,7 @@ namespace WinterService.FileOperations
 {
     public static class FileOperations
     {
-        public static List<string> GetAutumnZodiacIntervals()
+        public static List<string> GetWinterZodiacIntervals()
         {
             const string WinterStarSignsPath = "../../WinterService/WinterService/Resources/winter.txt";
             var initialWinterStarSigns = File.ReadAllLines(WinterStarSignsPath).ToList();

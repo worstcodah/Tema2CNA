@@ -27,13 +27,13 @@ namespace ZodiacClient {
             "ChNQcm90b3Mvem9kaWFjLnByb3RvEgZ6b2RpYWMiOAoMQ2FsZW5kYXJEYXRl",
             "EgsKA2RheRgBIAEoCRINCgVtb250aBgCIAEoCRIMCgR5ZWFyGAMgASgJIjYK",
             "EFN0YXJTaWduUmVzcG9uc2USIgoIc3RhclNpZ24YASABKA4yEC56b2RpYWMu",
-            "U3RhclNpZ24qngEKCFN0YXJTaWduEgwKCFZBUlNBVE9SEAASCQoFUEVTVEkQ",
-            "ARIKCgZCRVJCRUMQAhIICgRUQVVSEAMSCgoGR0VNRU5JEAQSBwoDUkFDEAUS",
-            "BwoDTEVVEAYSDAoIRkVDSU9BUkEQBxILCgdCQUxBTlRBEAgSDAoIU0NPUlBJ",
-            "T04QCRINCglTQUdFVEFUT1IQChINCglDQVBSSUNPUk4QCzJXCg9TdGFyU2ln",
-            "blNlcnZpY2USRAoSR2V0U3RhclNpZ25SZXF1ZXN0EhQuem9kaWFjLkNhbGVu",
-            "ZGFyRGF0ZRoYLnpvZGlhYy5TdGFyU2lnblJlc3BvbnNlQg+qAgxab2RpYWND",
-            "bGllbnRiBnByb3RvMw=="));
+            "U3RhclNpZ24qrQEKCFN0YXJTaWduEg0KCVVOREVGSU5FRBAAEgwKCFZBUlNB",
+            "VE9SEAESCQoFUEVTVEkQAhIKCgZCRVJCRUMQAxIICgRUQVVSEAQSCgoGR0VN",
+            "RU5JEAUSBwoDUkFDEAYSBwoDTEVVEAcSDAoIRkVDSU9BUkEQCBILCgdCQUxB",
+            "TlRBEAkSDAoIU0NPUlBJT04QChINCglTQUdFVEFUT1IQCxINCglDQVBSSUNP",
+            "Uk4QDDJXCg9TdGFyU2lnblNlcnZpY2USRAoSR2V0U3RhclNpZ25SZXF1ZXN0",
+            "EhQuem9kaWFjLkNhbGVuZGFyRGF0ZRoYLnpvZGlhYy5TdGFyU2lnblJlc3Bv",
+            "bnNlQg+qAgxab2RpYWNDbGllbnRiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::ZodiacClient.StarSign), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -46,18 +46,19 @@ namespace ZodiacClient {
   }
   #region Enums
   public enum StarSign {
-    [pbr::OriginalName("VARSATOR")] Varsator = 0,
-    [pbr::OriginalName("PESTI")] Pesti = 1,
-    [pbr::OriginalName("BERBEC")] Berbec = 2,
-    [pbr::OriginalName("TAUR")] Taur = 3,
-    [pbr::OriginalName("GEMENI")] Gemeni = 4,
-    [pbr::OriginalName("RAC")] Rac = 5,
-    [pbr::OriginalName("LEU")] Leu = 6,
-    [pbr::OriginalName("FECIOARA")] Fecioara = 7,
-    [pbr::OriginalName("BALANTA")] Balanta = 8,
-    [pbr::OriginalName("SCORPION")] Scorpion = 9,
-    [pbr::OriginalName("SAGETATOR")] Sagetator = 10,
-    [pbr::OriginalName("CAPRICORN")] Capricorn = 11,
+    [pbr::OriginalName("UNDEFINED")] Undefined = 0,
+    [pbr::OriginalName("VARSATOR")] Varsator = 1,
+    [pbr::OriginalName("PESTI")] Pesti = 2,
+    [pbr::OriginalName("BERBEC")] Berbec = 3,
+    [pbr::OriginalName("TAUR")] Taur = 4,
+    [pbr::OriginalName("GEMENI")] Gemeni = 5,
+    [pbr::OriginalName("RAC")] Rac = 6,
+    [pbr::OriginalName("LEU")] Leu = 7,
+    [pbr::OriginalName("FECIOARA")] Fecioara = 8,
+    [pbr::OriginalName("BALANTA")] Balanta = 9,
+    [pbr::OriginalName("SCORPION")] Scorpion = 10,
+    [pbr::OriginalName("SAGETATOR")] Sagetator = 11,
+    [pbr::OriginalName("CAPRICORN")] Capricorn = 12,
   }
 
   #endregion
@@ -347,7 +348,7 @@ namespace ZodiacClient {
 
     /// <summary>Field number for the "starSign" field.</summary>
     public const int StarSignFieldNumber = 1;
-    private global::ZodiacClient.StarSign starSign_ = global::ZodiacClient.StarSign.Varsator;
+    private global::ZodiacClient.StarSign starSign_ = global::ZodiacClient.StarSign.Undefined;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::ZodiacClient.StarSign StarSign {
       get { return starSign_; }
@@ -376,7 +377,7 @@ namespace ZodiacClient {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (StarSign != global::ZodiacClient.StarSign.Varsator) hash ^= StarSign.GetHashCode();
+      if (StarSign != global::ZodiacClient.StarSign.Undefined) hash ^= StarSign.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -393,7 +394,7 @@ namespace ZodiacClient {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (StarSign != global::ZodiacClient.StarSign.Varsator) {
+      if (StarSign != global::ZodiacClient.StarSign.Undefined) {
         output.WriteRawTag(8);
         output.WriteEnum((int) StarSign);
       }
@@ -406,7 +407,7 @@ namespace ZodiacClient {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (StarSign != global::ZodiacClient.StarSign.Varsator) {
+      if (StarSign != global::ZodiacClient.StarSign.Undefined) {
         output.WriteRawTag(8);
         output.WriteEnum((int) StarSign);
       }
@@ -419,7 +420,7 @@ namespace ZodiacClient {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (StarSign != global::ZodiacClient.StarSign.Varsator) {
+      if (StarSign != global::ZodiacClient.StarSign.Undefined) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) StarSign);
       }
       if (_unknownFields != null) {
@@ -433,7 +434,7 @@ namespace ZodiacClient {
       if (other == null) {
         return;
       }
-      if (other.StarSign != global::ZodiacClient.StarSign.Varsator) {
+      if (other.StarSign != global::ZodiacClient.StarSign.Undefined) {
         StarSign = other.StarSign;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);

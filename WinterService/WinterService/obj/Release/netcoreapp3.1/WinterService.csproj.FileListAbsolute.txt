@@ -1,0 +1,5 @@
+C:\repos\CNA\Tema2\WinterService\WinterService\obj\Release\netcoreapp3.1\WinterService.csprojAssemblyReference.cache
+C:\repos\CNA\Tema2\WinterService\WinterService\obj\Release\netcoreapp3.1\WinterService.AssemblyInfoInputs.cache
+C:\repos\CNA\Tema2\WinterService\WinterService\obj\Release\netcoreapp3.1\WinterService.AssemblyInfo.cs
+C:\repos\CNA\Tema2\WinterService\WinterService\obj\Release\netcoreapp3.1\WinterService.csproj.CoreCompileInputs.cache
+C:\repos\CNA\Tema2\WinterService\WinterService\obj\Release\netcoreapp3.1\WinterService.MvcApplicationPartsAssemblyInfo.cache

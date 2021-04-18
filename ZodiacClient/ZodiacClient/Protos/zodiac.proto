@@ -20,16 +20,17 @@ message StarSignResponse {
 }
 
 enum StarSign {
-   VARSATOR = 0;
-   PESTI = 1;
-   BERBEC = 2;
-   TAUR = 3;
-   GEMENI = 4;
-   RAC = 5;
-   LEU = 6;
-   FECIOARA = 7;
-   BALANTA = 8;
-   SCORPION = 9;
-   SAGETATOR = 10;
-   CAPRICORN = 11;
+   UNDEFINED = 0;
+   VARSATOR = 1;
+   PESTI = 2;
+   BERBEC = 3;
+   TAUR = 4;
+   GEMENI = 5;
+   RAC = 6;
+   LEU = 7;
+   FECIOARA = 8;
+   BALANTA = 9;
+   SCORPION = 10;
+   SAGETATOR = 11;
+   CAPRICORN = 12;
 }

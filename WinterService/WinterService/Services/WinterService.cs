@@ -38,7 +38,7 @@ namespace WinterService
         }
         public override Task<StarSignResponse> WinterStarSignRequest(CalendarDate calendarDate, ServerCallContext context)
         {
-            var winterStarSigns = FileOperations.FileOperations.GetAutumnZodiacIntervals();
+            var winterStarSigns = FileOperations.FileOperations.GetWinterZodiacIntervals();
             foreach (var winterStarSign in winterStarSigns)
             {
                 var lineContent = winterStarSign.Split("-").ToList();

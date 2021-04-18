@@ -27,13 +27,13 @@ namespace ZodiacServer {
             "ChNQcm90b3Mvem9kaWFjLnByb3RvEgZ6b2RpYWMiOAoMQ2FsZW5kYXJEYXRl",
             "EgsKA2RheRgBIAEoCRINCgVtb250aBgCIAEoCRIMCgR5ZWFyGAMgASgJIjYK",
             "EFN0YXJTaWduUmVzcG9uc2USIgoIc3RhclNpZ24YASABKA4yEC56b2RpYWMu",
-            "U3RhclNpZ24qngEKCFN0YXJTaWduEgwKCFZBUlNBVE9SEAASCQoFUEVTVEkQ",
-            "ARIKCgZCRVJCRUMQAhIICgRUQVVSEAMSCgoGR0VNRU5JEAQSBwoDUkFDEAUS",
-            "BwoDTEVVEAYSDAoIRkVDSU9BUkEQBxILCgdCQUxBTlRBEAgSDAoIU0NPUlBJ",
-            "T04QCRINCglTQUdFVEFUT1IQChINCglDQVBSSUNPUk4QCzJXCg9TdGFyU2ln",
-            "blNlcnZpY2USRAoSR2V0U3RhclNpZ25SZXF1ZXN0EhQuem9kaWFjLkNhbGVu",
-            "ZGFyRGF0ZRoYLnpvZGlhYy5TdGFyU2lnblJlc3BvbnNlQg+qAgxab2RpYWNT",
-            "ZXJ2ZXJiBnByb3RvMw=="));
+            "U3RhclNpZ24qrQEKCFN0YXJTaWduEg0KCVVOREVGSU5FRBAAEgwKCFZBUlNB",
+            "VE9SEAESCQoFUEVTVEkQAhIKCgZCRVJCRUMQAxIICgRUQVVSEAQSCgoGR0VN",
+            "RU5JEAUSBwoDUkFDEAYSBwoDTEVVEAcSDAoIRkVDSU9BUkEQCBILCgdCQUxB",
+            "TlRBEAkSDAoIU0NPUlBJT04QChINCglTQUdFVEFUT1IQCxINCglDQVBSSUNP",
+            "Uk4QDDJXCg9TdGFyU2lnblNlcnZpY2USRAoSR2V0U3RhclNpZ25SZXF1ZXN0",
+            "EhQuem9kaWFjLkNhbGVuZGFyRGF0ZRoYLnpvZGlhYy5TdGFyU2lnblJlc3Bv",
+            "bnNlQg+qAgxab2RpYWNTZXJ2ZXJiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::ZodiacServer.StarSign), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -46,18 +46,19 @@ namespace ZodiacServer {
   }
   #region Enums
   public enum StarSign {
-    [pbr::OriginalName("VARSATOR")] Varsator = 0,
-    [pbr::OriginalName("PESTI")] Pesti = 1,
-    [pbr::OriginalName("BERBEC")] Berbec = 2,
-    [pbr::OriginalName("TAUR")] Taur = 3,
-    [pbr::OriginalName("GEMENI")] Gemeni = 4,
-    [pbr::OriginalName("RAC")] Rac = 5,
-    [pbr::OriginalName("LEU")] Leu = 6,
-    [pbr::OriginalName("FECIOARA")] Fecioara = 7,
-    [pbr::OriginalName("BALANTA")] Balanta = 8,
-    [pbr::OriginalName("SCORPION")] Scorpion = 9,
-    [pbr::OriginalName("SAGETATOR")] Sagetator = 10,
-    [pbr::OriginalName("CAPRICORN")] Capricorn = 11,
+    [pbr::OriginalName("UNDEFINED")] Undefined = 0,
+    [pbr::OriginalName("VARSATOR")] Varsator = 1,
+    [pbr::OriginalName("PESTI")] Pesti = 2,
+    [pbr::OriginalName("BERBEC")] Berbec = 3,
+    [pbr::OriginalName("TAUR")] Taur = 4,
+    [pbr::OriginalName("GEMENI")] Gemeni = 5,
+    [pbr::OriginalName("RAC")] Rac = 6,
+    [pbr::OriginalName("LEU")] Leu = 7,
+    [pbr::OriginalName("FECIOARA")] Fecioara = 8,
+    [pbr::OriginalName("BALANTA")] Balanta = 9,
+    [pbr::OriginalName("SCORPION")] Scorpion = 10,
+    [pbr::OriginalName("SAGETATOR")] Sagetator = 11,
+    [pbr::OriginalName("CAPRICORN")] Capricorn = 12,
   }
 
   #endregion
@@ -284,7 +285,7 @@ namespace ZodiacServer {
 
     /// <summary>Field number for the "starSign" field.</summary>
     public const int StarSignFieldNumber = 1;
-    private global::ZodiacServer.StarSign starSign_ = global::ZodiacServer.StarSign.Varsator;
+    private global::ZodiacServer.StarSign starSign_ = global::ZodiacServer.StarSign.Undefined;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::ZodiacServer.StarSign StarSign {
       get { return starSign_; }
@@ -313,7 +314,7 @@ namespace ZodiacServer {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (StarSign != global::ZodiacServer.StarSign.Varsator) hash ^= StarSign.GetHashCode();
+      if (StarSign != global::ZodiacServer.StarSign.Undefined) hash ^= StarSign.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -327,7 +328,7 @@ namespace ZodiacServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (StarSign != global::ZodiacServer.StarSign.Varsator) {
+      if (StarSign != global::ZodiacServer.StarSign.Undefined) {
         output.WriteRawTag(8);
         output.WriteEnum((int) StarSign);
       }
@@ -339,7 +340,7 @@ namespace ZodiacServer {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (StarSign != global::ZodiacServer.StarSign.Varsator) {
+      if (StarSign != global::ZodiacServer.StarSign.Undefined) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) StarSign);
       }
       if (_unknownFields != null) {
@@ -353,7 +354,7 @@ namespace ZodiacServer {
       if (other == null) {
         return;
       }
-      if (other.StarSign != global::ZodiacServer.StarSign.Varsator) {
+      if (other.StarSign != global::ZodiacServer.StarSign.Undefined) {
         StarSign = other.StarSign;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);

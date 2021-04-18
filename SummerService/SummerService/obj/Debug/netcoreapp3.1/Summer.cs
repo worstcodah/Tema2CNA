@@ -27,10 +27,8 @@ namespace SummerService {
             "ChNQcm90b3Mvc3VtbWVyLnByb3RvEgZ6b2RpYWMiOAoMQ2FsZW5kYXJEYXRl",
             "EgsKA2RheRgBIAEoCRINCgVtb250aBgCIAEoCRIMCgR5ZWFyGAMgASgJIjYK",
             "EFN0YXJTaWduUmVzcG9uc2USIgoIc3RhclNpZ24YASABKA4yEC56b2RpYWMu",
-            "U3RhclNpZ24qngEKCFN0YXJTaWduEgwKCFZBUlNBVE9SEAASCQoFUEVTVEkQ",
-            "ARIKCgZCRVJCRUMQAhIICgRUQVVSEAMSCgoGR0VNRU5JEAQSBwoDUkFDEAUS",
-            "BwoDTEVVEAYSDAoIRkVDSU9BUkEQBxILCgdCQUxBTlRBEAgSDAoIU0NPUlBJ",
-            "T04QCRINCglTQUdFVEFUT1IQChINCglDQVBSSUNPUk4QCzJgChVTdW1tZXJT",
+            "U3RhclNpZ24qRQoIU3RhclNpZ24SDQoJVU5ERUZJTkVEEAASCgoGR0VNRU5J",
+            "EAUSBwoDUkFDEAYSBwoDTEVVEAcSDAoIRkVDSU9BUkEQCDJgChVTdW1tZXJT",
             "dGFyU2lnblNlcnZpY2USRwoVU3VtbWVyU3RhclNpZ25SZXF1ZXN0EhQuem9k",
             "aWFjLkNhbGVuZGFyRGF0ZRoYLnpvZGlhYy5TdGFyU2lnblJlc3BvbnNlQhCq",
             "Ag1TdW1tZXJTZXJ2aWNlYgZwcm90bzM="));
@@ -46,18 +44,11 @@ namespace SummerService {
   }
   #region Enums
   public enum StarSign {
-    [pbr::OriginalName("VARSATOR")] Varsator = 0,
-    [pbr::OriginalName("PESTI")] Pesti = 1,
-    [pbr::OriginalName("BERBEC")] Berbec = 2,
-    [pbr::OriginalName("TAUR")] Taur = 3,
-    [pbr::OriginalName("GEMENI")] Gemeni = 4,
-    [pbr::OriginalName("RAC")] Rac = 5,
-    [pbr::OriginalName("LEU")] Leu = 6,
-    [pbr::OriginalName("FECIOARA")] Fecioara = 7,
-    [pbr::OriginalName("BALANTA")] Balanta = 8,
-    [pbr::OriginalName("SCORPION")] Scorpion = 9,
-    [pbr::OriginalName("SAGETATOR")] Sagetator = 10,
-    [pbr::OriginalName("CAPRICORN")] Capricorn = 11,
+    [pbr::OriginalName("UNDEFINED")] Undefined = 0,
+    [pbr::OriginalName("GEMENI")] Gemeni = 5,
+    [pbr::OriginalName("RAC")] Rac = 6,
+    [pbr::OriginalName("LEU")] Leu = 7,
+    [pbr::OriginalName("FECIOARA")] Fecioara = 8,
   }
 
   #endregion
@@ -284,7 +275,7 @@ namespace SummerService {
 
     /// <summary>Field number for the "starSign" field.</summary>
     public const int StarSignFieldNumber = 1;
-    private global::SummerService.StarSign starSign_ = global::SummerService.StarSign.Varsator;
+    private global::SummerService.StarSign starSign_ = global::SummerService.StarSign.Undefined;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::SummerService.StarSign StarSign {
       get { return starSign_; }
@@ -313,7 +304,7 @@ namespace SummerService {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (StarSign != global::SummerService.StarSign.Varsator) hash ^= StarSign.GetHashCode();
+      if (StarSign != global::SummerService.StarSign.Undefined) hash ^= StarSign.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -327,7 +318,7 @@ namespace SummerService {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (StarSign != global::SummerService.StarSign.Varsator) {
+      if (StarSign != global::SummerService.StarSign.Undefined) {
         output.WriteRawTag(8);
         output.WriteEnum((int) StarSign);
       }
@@ -339,7 +330,7 @@ namespace SummerService {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (StarSign != global::SummerService.StarSign.Varsator) {
+      if (StarSign != global::SummerService.StarSign.Undefined) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) StarSign);
       }
       if (_unknownFields != null) {
@@ -353,7 +344,7 @@ namespace SummerService {
       if (other == null) {
         return;
       }
-      if (other.StarSign != global::SummerService.StarSign.Varsator) {
+      if (other.StarSign != global::SummerService.StarSign.Undefined) {
         StarSign = other.StarSign;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
