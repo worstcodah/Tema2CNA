@@ -55,7 +55,7 @@ namespace WinterService
 
                     }
                 }
-                if (Convert.ToInt32(calendarDate.Month) == Convert.ToInt32(secondIntervalMonth) && firstIntervalMonth != secondIntervalMonth)
+                if (Convert.ToInt32(calendarDate.Month) == Convert.ToInt32(secondIntervalMonth))
                 {
                     var intervalStartDay = Convert.ToInt32(Constants.Constants.MinDayValue);
                     var intervalEndDay = Convert.ToInt32(secondInterval.ElementAt(0));
