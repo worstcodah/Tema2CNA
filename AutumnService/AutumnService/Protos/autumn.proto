@@ -32,4 +32,5 @@ enum StarSign {
    SCORPION = 9;
    SAGETATOR = 10;
    CAPRICORN = 11;
+   UNDEFINED = 12;
 }

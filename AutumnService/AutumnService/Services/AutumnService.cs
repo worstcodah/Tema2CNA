@@ -15,11 +15,59 @@ namespace AutumnService
             _logger = logger;
         }
 
+        public StarSign StringToStarSign(string starSignString)
+        {
+            switch (starSignString)
+            {
+                case "Fecioara":
+                    return StarSign.Fecioara;
+                case "Balanta":
+                    return StarSign.Balanta;
+                case "Scorpion":
+                    return StarSign.Scorpion;
+                case "Sagetator":
+                    return StarSign.Sagetator;
+            }
+            return StarSign.Undefined;
+        }
         public override Task<StarSignResponse> AutumnStarSignRequest(CalendarDate calendarDate, ServerCallContext context)
         {
-           
+            var autumnStarSigns = FileOperations.FileOperations.GetAutumnZodiacIntervals();
+            foreach (var autumnStarSign in autumnStarSigns)
+            {
+                var lineContent = autumnStarSign.Split("-").ToList();
+                var firstInterval = lineContent.ElementAt(0).Split("/").ToList();
+                var secondInterval = lineContent.ElementAt(1).Split("/").ToList();
+                var firstIntervalMonth = firstInterval.ElementAt(1);
+                var secondIntervalMonth = secondInterval.ElementAt(1);
 
+                if (calendarDate.Month == firstIntervalMonth)
+                {
+                    var intervalStartDay = Convert.ToInt32(firstInterval.ElementAt(0));
+                    var intervalEndDay = firstIntervalMonth == secondIntervalMonth ? Convert.ToInt32(secondInterval.ElementAt(0)) : Constants.Constants.MaxDayValue;
+                    if (intervalStartDay <= Convert.ToInt32(calendarDate.Day) && intervalEndDay >= Convert.ToInt32(calendarDate.Day))
+                    {
+                        var starSignString = lineContent.ElementAt(2);
+                        return Task.FromResult(new StarSignResponse { StarSign = StringToStarSign(starSignString) });
+
+                    }
+                }
+                if (calendarDate.Month == secondIntervalMonth && firstIntervalMonth != secondIntervalMonth)
+                {
+                    var intervalStartDay = Constants.Constants.MinDayValue;
+                    var intervalEndDay = secondInterval.ElementAt(0);
+                    if (Convert.ToInt32(intervalStartDay) <= Convert.ToInt32(calendarDate.Day) && Convert.ToInt32(intervalEndDay) >= Convert.ToInt32(calendarDate.Day))
+                    {
+                        var starSignString = lineContent.ElementAt(2);
+                        return Task.FromResult(new StarSignResponse { StarSign = StringToStarSign(starSignString) });
+                    }
+                }
+
+            }
             return base.AutumnStarSignRequest(calendarDate, context);
+
         }
+
     }
 }
+

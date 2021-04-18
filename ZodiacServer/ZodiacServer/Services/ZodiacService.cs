@@ -26,7 +26,7 @@ namespace ZodiacServer
 
 
             //Zodii
-            var channel = GrpcChannel.ForAddress(Constants.Constants.CHANNEL_PORT);
+            var channel = GrpcChannel.ForAddress(Constants.Constants.ChannelPort);
             
             switch (calendarDate.Month)
             {

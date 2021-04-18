@@ -10,9 +10,8 @@ namespace ZodiacClient
             var channel = GrpcChannel.ForAddress("https://localhost:5001");
             var client = new StarSignService.StarSignServiceClient(channel);
 
-            var zodiacData = client.GetStarSignRequest(new CalendarDate { Day="25", Month="10", Year="2000"});
+            var zodiacData = client.GetStarSignRequest(new CalendarDate { Day="03", Month="11", Year="2000"});
             Console.WriteLine(zodiacData.StarSign);
-
 
             channel.ShutdownAsync();
         }

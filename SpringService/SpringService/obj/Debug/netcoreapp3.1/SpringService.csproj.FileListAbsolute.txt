@@ -25,3 +25,4 @@ C:\repos\CNA\Tema2\SpringService\SpringService\obj\Debug\netcoreapp3.1\SpringSer
 C:\repos\CNA\Tema2\SpringService\SpringService\obj\Debug\netcoreapp3.1\SpringService.dll
 C:\repos\CNA\Tema2\SpringService\SpringService\obj\Debug\netcoreapp3.1\SpringService.pdb
 C:\repos\CNA\Tema2\SpringService\SpringService\obj\Debug\netcoreapp3.1\SpringService.genruntimeconfig.cache
+C:\repos\CNA\Tema2\SpringService\SpringService\obj\Debug\netcoreapp3.1\SpringService.csprojAssemblyReference.cache

@@ -25,3 +25,4 @@ C:\repos\CNA\Tema2\WinterService\WinterService\obj\Debug\netcoreapp3.1\WinterSer
 C:\repos\CNA\Tema2\WinterService\WinterService\obj\Debug\netcoreapp3.1\WinterService.dll
 C:\repos\CNA\Tema2\WinterService\WinterService\obj\Debug\netcoreapp3.1\WinterService.pdb
 C:\repos\CNA\Tema2\WinterService\WinterService\obj\Debug\netcoreapp3.1\WinterService.genruntimeconfig.cache
+C:\repos\CNA\Tema2\WinterService\WinterService\obj\Debug\netcoreapp3.1\WinterService.csprojAssemblyReference.cache
