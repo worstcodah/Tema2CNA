@@ -1,18 +1,19 @@
+
 syntax = "proto3";
 
 option csharp_namespace = "ZodiacServer";
 
+
 package zodiac;
+import "google/protobuf/wrappers.proto";
 
 
 service StarSignService {
-  rpc GetStarSignRequest (CalendarDate) returns (StarSignResponse);
+  rpc GetStarSignRequest (InputDate) returns (StarSignResponse);
 }
 
-message CalendarDate {
-  string day = 1;
-  string month = 2;
-  string year = 3;
+message InputDate {
+  string inputCalendarDate = 1;
 }
 
 message StarSignResponse {

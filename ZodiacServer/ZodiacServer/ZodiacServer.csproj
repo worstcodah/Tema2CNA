@@ -18,8 +18,4 @@
     <ProjectReference Include="..\..\SummerService\SummerService\SummerService.csproj" />
     <ProjectReference Include="..\..\WinterService\WinterService\WinterService.csproj" />
   </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="FileOperations\" />
-  </ItemGroup>
 </Project>

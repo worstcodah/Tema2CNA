@@ -12,14 +12,14 @@ namespace ZodiacServer {
   {
     static readonly string __ServiceName = "zodiac.StarSignService";
 
-    static readonly grpc::Marshaller<global::ZodiacServer.CalendarDate> __Marshaller_zodiac_CalendarDate = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::ZodiacServer.CalendarDate.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::ZodiacServer.InputDate> __Marshaller_zodiac_InputDate = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::ZodiacServer.InputDate.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::ZodiacServer.StarSignResponse> __Marshaller_zodiac_StarSignResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::ZodiacServer.StarSignResponse.Parser.ParseFrom);
 
-    static readonly grpc::Method<global::ZodiacServer.CalendarDate, global::ZodiacServer.StarSignResponse> __Method_GetStarSignRequest = new grpc::Method<global::ZodiacServer.CalendarDate, global::ZodiacServer.StarSignResponse>(
+    static readonly grpc::Method<global::ZodiacServer.InputDate, global::ZodiacServer.StarSignResponse> __Method_GetStarSignRequest = new grpc::Method<global::ZodiacServer.InputDate, global::ZodiacServer.StarSignResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetStarSignRequest",
-        __Marshaller_zodiac_CalendarDate,
+        __Marshaller_zodiac_InputDate,
         __Marshaller_zodiac_StarSignResponse);
 
     /// <summary>Service descriptor</summary>
@@ -32,7 +32,7 @@ namespace ZodiacServer {
     [grpc::BindServiceMethod(typeof(StarSignService), "BindService")]
     public abstract partial class StarSignServiceBase
     {
-      public virtual global::System.Threading.Tasks.Task<global::ZodiacServer.StarSignResponse> GetStarSignRequest(global::ZodiacServer.CalendarDate request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::ZodiacServer.StarSignResponse> GetStarSignRequest(global::ZodiacServer.InputDate request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -62,19 +62,19 @@ namespace ZodiacServer {
       {
       }
 
-      public virtual global::ZodiacServer.StarSignResponse GetStarSignRequest(global::ZodiacServer.CalendarDate request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::ZodiacServer.StarSignResponse GetStarSignRequest(global::ZodiacServer.InputDate request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetStarSignRequest(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::ZodiacServer.StarSignResponse GetStarSignRequest(global::ZodiacServer.CalendarDate request, grpc::CallOptions options)
+      public virtual global::ZodiacServer.StarSignResponse GetStarSignRequest(global::ZodiacServer.InputDate request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetStarSignRequest, null, options, request);
       }
-      public virtual grpc::AsyncUnaryCall<global::ZodiacServer.StarSignResponse> GetStarSignRequestAsync(global::ZodiacServer.CalendarDate request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::ZodiacServer.StarSignResponse> GetStarSignRequestAsync(global::ZodiacServer.InputDate request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetStarSignRequestAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncUnaryCall<global::ZodiacServer.StarSignResponse> GetStarSignRequestAsync(global::ZodiacServer.CalendarDate request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::ZodiacServer.StarSignResponse> GetStarSignRequestAsync(global::ZodiacServer.InputDate request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetStarSignRequest, null, options, request);
       }
@@ -99,7 +99,7 @@ namespace ZodiacServer {
     /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
     public static void BindService(grpc::ServiceBinderBase serviceBinder, StarSignServiceBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_GetStarSignRequest, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ZodiacServer.CalendarDate, global::ZodiacServer.StarSignResponse>(serviceImpl.GetStarSignRequest));
+      serviceBinder.AddMethod(__Method_GetStarSignRequest, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ZodiacServer.InputDate, global::ZodiacServer.StarSignResponse>(serviceImpl.GetStarSignRequest));
     }
 
   }

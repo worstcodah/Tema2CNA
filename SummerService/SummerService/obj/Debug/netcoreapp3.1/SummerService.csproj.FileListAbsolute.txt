@@ -13,7 +13,6 @@ C:\repos\CNA\Tema2\SummerService\SummerService\bin\Debug\netcoreapp3.1\Grpc.Core
 C:\repos\CNA\Tema2\SummerService\SummerService\bin\Debug\netcoreapp3.1\Grpc.Net.Client.dll
 C:\repos\CNA\Tema2\SummerService\SummerService\bin\Debug\netcoreapp3.1\Grpc.Net.ClientFactory.dll
 C:\repos\CNA\Tema2\SummerService\SummerService\bin\Debug\netcoreapp3.1\Grpc.Net.Common.dll
-C:\repos\CNA\Tema2\SummerService\SummerService\obj\Debug\netcoreapp3.1\SummerService.csprojAssemblyReference.cache
 C:\repos\CNA\Tema2\SummerService\SummerService\obj\Debug\netcoreapp3.1\SummerService.AssemblyInfoInputs.cache
 C:\repos\CNA\Tema2\SummerService\SummerService\obj\Debug\netcoreapp3.1\SummerService.AssemblyInfo.cs
 C:\repos\CNA\Tema2\SummerService\SummerService\obj\Debug\netcoreapp3.1\SummerService.csproj.CoreCompileInputs.cache

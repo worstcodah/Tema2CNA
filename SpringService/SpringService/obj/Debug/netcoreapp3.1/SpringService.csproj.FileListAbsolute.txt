@@ -13,7 +13,6 @@ C:\repos\CNA\Tema2\SpringService\SpringService\bin\Debug\netcoreapp3.1\Grpc.Core
 C:\repos\CNA\Tema2\SpringService\SpringService\bin\Debug\netcoreapp3.1\Grpc.Net.Client.dll
 C:\repos\CNA\Tema2\SpringService\SpringService\bin\Debug\netcoreapp3.1\Grpc.Net.ClientFactory.dll
 C:\repos\CNA\Tema2\SpringService\SpringService\bin\Debug\netcoreapp3.1\Grpc.Net.Common.dll
-C:\repos\CNA\Tema2\SpringService\SpringService\obj\Debug\netcoreapp3.1\SpringService.csprojAssemblyReference.cache
 C:\repos\CNA\Tema2\SpringService\SpringService\obj\Debug\netcoreapp3.1\SpringService.AssemblyInfoInputs.cache
 C:\repos\CNA\Tema2\SpringService\SpringService\obj\Debug\netcoreapp3.1\SpringService.AssemblyInfo.cs
 C:\repos\CNA\Tema2\SpringService\SpringService\obj\Debug\netcoreapp3.1\SpringService.csproj.CoreCompileInputs.cache

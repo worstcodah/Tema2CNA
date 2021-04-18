@@ -1,2 +1,3 @@
 obj\Debug\netcoreapp3.1/Zodiac.cs \
-obj\Debug\netcoreapp3.1/ZodiacGrpc.cs: Protos/zodiac.proto
+obj\Debug\netcoreapp3.1/ZodiacGrpc.cs: C:/Users/dorin/.nuget/packages/grpc.tools/2.27.0/build/native/include/google/protobuf/wrappers.proto\
+ Protos/zodiac.proto

@@ -24,20 +24,20 @@ namespace ZodiacClient {
     static ZodiacReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChNQcm90b3Mvem9kaWFjLnByb3RvEgZ6b2RpYWMiOAoMQ2FsZW5kYXJEYXRl",
-            "EgsKA2RheRgBIAEoCRINCgVtb250aBgCIAEoCRIMCgR5ZWFyGAMgASgJIjYK",
-            "EFN0YXJTaWduUmVzcG9uc2USIgoIc3RhclNpZ24YASABKA4yEC56b2RpYWMu",
-            "U3RhclNpZ24qrQEKCFN0YXJTaWduEg0KCVVOREVGSU5FRBAAEgwKCFZBUlNB",
-            "VE9SEAESCQoFUEVTVEkQAhIKCgZCRVJCRUMQAxIICgRUQVVSEAQSCgoGR0VN",
-            "RU5JEAUSBwoDUkFDEAYSBwoDTEVVEAcSDAoIRkVDSU9BUkEQCBILCgdCQUxB",
-            "TlRBEAkSDAoIU0NPUlBJT04QChINCglTQUdFVEFUT1IQCxINCglDQVBSSUNP",
-            "Uk4QDDJXCg9TdGFyU2lnblNlcnZpY2USRAoSR2V0U3RhclNpZ25SZXF1ZXN0",
-            "EhQuem9kaWFjLkNhbGVuZGFyRGF0ZRoYLnpvZGlhYy5TdGFyU2lnblJlc3Bv",
-            "bnNlQg+qAgxab2RpYWNDbGllbnRiBnByb3RvMw=="));
+            "ChNQcm90b3Mvem9kaWFjLnByb3RvEgZ6b2RpYWMiJgoJSW5wdXREYXRlEhkK",
+            "EWlucHV0Q2FsZW5kYXJEYXRlGAEgASgJIjYKEFN0YXJTaWduUmVzcG9uc2US",
+            "IgoIc3RhclNpZ24YASABKA4yEC56b2RpYWMuU3RhclNpZ24qrQEKCFN0YXJT",
+            "aWduEg0KCVVOREVGSU5FRBAAEgwKCFZBUlNBVE9SEAESCQoFUEVTVEkQAhIK",
+            "CgZCRVJCRUMQAxIICgRUQVVSEAQSCgoGR0VNRU5JEAUSBwoDUkFDEAYSBwoD",
+            "TEVVEAcSDAoIRkVDSU9BUkEQCBILCgdCQUxBTlRBEAkSDAoIU0NPUlBJT04Q",
+            "ChINCglTQUdFVEFUT1IQCxINCglDQVBSSUNPUk4QDDJUCg9TdGFyU2lnblNl",
+            "cnZpY2USQQoSR2V0U3RhclNpZ25SZXF1ZXN0EhEuem9kaWFjLklucHV0RGF0",
+            "ZRoYLnpvZGlhYy5TdGFyU2lnblJlc3BvbnNlQg+qAgxab2RpYWNDbGllbnRi",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::ZodiacClient.StarSign), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::ZodiacClient.CalendarDate), global::ZodiacClient.CalendarDate.Parser, new[]{ "Day", "Month", "Year" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ZodiacClient.InputDate), global::ZodiacClient.InputDate.Parser, new[]{ "InputCalendarDate" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ZodiacClient.StarSignResponse), global::ZodiacClient.StarSignResponse.Parser, new[]{ "StarSign" }, null, null, null, null)
           }));
     }
@@ -64,15 +64,15 @@ namespace ZodiacClient {
   #endregion
 
   #region Messages
-  public sealed partial class CalendarDate : pb::IMessage<CalendarDate>
+  public sealed partial class InputDate : pb::IMessage<InputDate>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<CalendarDate> _parser = new pb::MessageParser<CalendarDate>(() => new CalendarDate());
+    private static readonly pb::MessageParser<InputDate> _parser = new pb::MessageParser<InputDate>(() => new InputDate());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<CalendarDate> Parser { get { return _parser; } }
+    public static pb::MessageParser<InputDate> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -85,83 +85,55 @@ namespace ZodiacClient {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CalendarDate() {
+    public InputDate() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CalendarDate(CalendarDate other) : this() {
-      day_ = other.day_;
-      month_ = other.month_;
-      year_ = other.year_;
+    public InputDate(InputDate other) : this() {
+      inputCalendarDate_ = other.inputCalendarDate_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CalendarDate Clone() {
-      return new CalendarDate(this);
+    public InputDate Clone() {
+      return new InputDate(this);
     }
 
-    /// <summary>Field number for the "day" field.</summary>
-    public const int DayFieldNumber = 1;
-    private string day_ = "";
+    /// <summary>Field number for the "inputCalendarDate" field.</summary>
+    public const int InputCalendarDateFieldNumber = 1;
+    private string inputCalendarDate_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Day {
-      get { return day_; }
+    public string InputCalendarDate {
+      get { return inputCalendarDate_; }
       set {
-        day_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "month" field.</summary>
-    public const int MonthFieldNumber = 2;
-    private string month_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Month {
-      get { return month_; }
-      set {
-        month_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "year" field.</summary>
-    public const int YearFieldNumber = 3;
-    private string year_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Year {
-      get { return year_; }
-      set {
-        year_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        inputCalendarDate_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as CalendarDate);
+      return Equals(other as InputDate);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(CalendarDate other) {
+    public bool Equals(InputDate other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Day != other.Day) return false;
-      if (Month != other.Month) return false;
-      if (Year != other.Year) return false;
+      if (InputCalendarDate != other.InputCalendarDate) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Day.Length != 0) hash ^= Day.GetHashCode();
-      if (Month.Length != 0) hash ^= Month.GetHashCode();
-      if (Year.Length != 0) hash ^= Year.GetHashCode();
+      if (InputCalendarDate.Length != 0) hash ^= InputCalendarDate.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -178,17 +150,9 @@ namespace ZodiacClient {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Day.Length != 0) {
+      if (InputCalendarDate.Length != 0) {
         output.WriteRawTag(10);
-        output.WriteString(Day);
-      }
-      if (Month.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(Month);
-      }
-      if (Year.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(Year);
+        output.WriteString(InputCalendarDate);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -199,17 +163,9 @@ namespace ZodiacClient {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Day.Length != 0) {
+      if (InputCalendarDate.Length != 0) {
         output.WriteRawTag(10);
-        output.WriteString(Day);
-      }
-      if (Month.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(Month);
-      }
-      if (Year.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(Year);
+        output.WriteString(InputCalendarDate);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -220,14 +176,8 @@ namespace ZodiacClient {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Day.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Day);
-      }
-      if (Month.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Month);
-      }
-      if (Year.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Year);
+      if (InputCalendarDate.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(InputCalendarDate);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -236,18 +186,12 @@ namespace ZodiacClient {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(CalendarDate other) {
+    public void MergeFrom(InputDate other) {
       if (other == null) {
         return;
       }
-      if (other.Day.Length != 0) {
-        Day = other.Day;
-      }
-      if (other.Month.Length != 0) {
-        Month = other.Month;
-      }
-      if (other.Year.Length != 0) {
-        Year = other.Year;
+      if (other.InputCalendarDate.Length != 0) {
+        InputCalendarDate = other.InputCalendarDate;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -264,15 +208,7 @@ namespace ZodiacClient {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            Day = input.ReadString();
-            break;
-          }
-          case 18: {
-            Month = input.ReadString();
-            break;
-          }
-          case 26: {
-            Year = input.ReadString();
+            InputCalendarDate = input.ReadString();
             break;
           }
         }
@@ -290,15 +226,7 @@ namespace ZodiacClient {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            Day = input.ReadString();
-            break;
-          }
-          case 18: {
-            Month = input.ReadString();
-            break;
-          }
-          case 26: {
-            Year = input.ReadString();
+            InputCalendarDate = input.ReadString();
             break;
           }
         }

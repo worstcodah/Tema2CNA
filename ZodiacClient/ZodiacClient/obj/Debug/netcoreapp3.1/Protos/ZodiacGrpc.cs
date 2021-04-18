@@ -42,14 +42,14 @@ namespace ZodiacClient {
       return parser.ParseFrom(context.PayloadAsNewBuffer());
     }
 
-    static readonly grpc::Marshaller<global::ZodiacClient.CalendarDate> __Marshaller_zodiac_CalendarDate = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ZodiacClient.CalendarDate.Parser));
+    static readonly grpc::Marshaller<global::ZodiacClient.InputDate> __Marshaller_zodiac_InputDate = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ZodiacClient.InputDate.Parser));
     static readonly grpc::Marshaller<global::ZodiacClient.StarSignResponse> __Marshaller_zodiac_StarSignResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ZodiacClient.StarSignResponse.Parser));
 
-    static readonly grpc::Method<global::ZodiacClient.CalendarDate, global::ZodiacClient.StarSignResponse> __Method_GetStarSignRequest = new grpc::Method<global::ZodiacClient.CalendarDate, global::ZodiacClient.StarSignResponse>(
+    static readonly grpc::Method<global::ZodiacClient.InputDate, global::ZodiacClient.StarSignResponse> __Method_GetStarSignRequest = new grpc::Method<global::ZodiacClient.InputDate, global::ZodiacClient.StarSignResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetStarSignRequest",
-        __Marshaller_zodiac_CalendarDate,
+        __Marshaller_zodiac_InputDate,
         __Marshaller_zodiac_StarSignResponse);
 
     /// <summary>Service descriptor</summary>
@@ -81,19 +81,19 @@ namespace ZodiacClient {
       {
       }
 
-      public virtual global::ZodiacClient.StarSignResponse GetStarSignRequest(global::ZodiacClient.CalendarDate request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::ZodiacClient.StarSignResponse GetStarSignRequest(global::ZodiacClient.InputDate request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetStarSignRequest(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::ZodiacClient.StarSignResponse GetStarSignRequest(global::ZodiacClient.CalendarDate request, grpc::CallOptions options)
+      public virtual global::ZodiacClient.StarSignResponse GetStarSignRequest(global::ZodiacClient.InputDate request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetStarSignRequest, null, options, request);
       }
-      public virtual grpc::AsyncUnaryCall<global::ZodiacClient.StarSignResponse> GetStarSignRequestAsync(global::ZodiacClient.CalendarDate request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::ZodiacClient.StarSignResponse> GetStarSignRequestAsync(global::ZodiacClient.InputDate request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetStarSignRequestAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncUnaryCall<global::ZodiacClient.StarSignResponse> GetStarSignRequestAsync(global::ZodiacClient.CalendarDate request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::ZodiacClient.StarSignResponse> GetStarSignRequestAsync(global::ZodiacClient.InputDate request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetStarSignRequest, null, options, request);
       }
