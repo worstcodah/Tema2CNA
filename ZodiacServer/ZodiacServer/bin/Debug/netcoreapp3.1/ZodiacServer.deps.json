@@ -24,7 +24,11 @@
     ".NETCoreApp,Version=v3.1": {
       "ZodiacServer/1.0.0": {
         "dependencies": {
+          "AutumnService": "1.0.0",
           "Grpc.AspNetCore": "2.27.0",
+          "SpringService": "1.0.0",
+          "SummerService": "1.0.0",
+          "WinterService": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.1.0.0",
@@ -476,6 +480,50 @@
       "System.Diagnostics.DiagnosticSource/4.5.1": {},
       "System.Memory/4.5.3": {},
       "System.Runtime.CompilerServices.Unsafe/4.5.1": {},
+      "AutumnService/1.0.0": {
+        "dependencies": {
+          "Grpc.AspNetCore": "2.27.0"
+        },
+        "runtime": {
+          "AutumnService.dll": {}
+        },
+        "compile": {
+          "AutumnService.dll": {}
+        }
+      },
+      "SpringService/1.0.0": {
+        "dependencies": {
+          "Grpc.AspNetCore": "2.27.0"
+        },
+        "runtime": {
+          "SpringService.dll": {}
+        },
+        "compile": {
+          "SpringService.dll": {}
+        }
+      },
+      "SummerService/1.0.0": {
+        "dependencies": {
+          "Grpc.AspNetCore": "2.27.0"
+        },
+        "runtime": {
+          "SummerService.dll": {}
+        },
+        "compile": {
+          "SummerService.dll": {}
+        }
+      },
+      "WinterService/1.0.0": {
+        "dependencies": {
+          "Grpc.AspNetCore": "2.27.0"
+        },
+        "runtime": {
+          "WinterService.dll": {}
+        },
+        "compile": {
+          "WinterService.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
         "compile": {
           "Microsoft.AspNetCore.Antiforgery.dll": {}
@@ -2322,6 +2370,26 @@
       "sha512": "sha512-Zh8t8oqolRaFa9vmOZfdQm/qKejdqz0J9kr7o2Fu0vPeoH3BL1EOXipKWwkWtLT1JPzjByrF19fGuFlNbmPpiw==",
       "path": "system.runtime.compilerservices.unsafe/4.5.1",
       "hashPath": "system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512"
+    },
+    "AutumnService/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SpringService/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SummerService/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WinterService/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
       "type": "referenceassembly",

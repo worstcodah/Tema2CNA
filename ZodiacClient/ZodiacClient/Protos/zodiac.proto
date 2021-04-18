@@ -6,10 +6,8 @@ package zodiac;
 
 
 service StarSignService {
-  
-  rpc GetStarSign (CalendarDate) returns (StarSign);
+  rpc GetStarSignRequest (CalendarDate) returns (StarSignResponse);
 }
-
 
 message CalendarDate {
   string day = 1;
@@ -17,6 +15,21 @@ message CalendarDate {
   string year = 3;
 }
 
-message StarSign {
-  string name = 1;
+message StarSignResponse {
+  StarSign starSign = 1;
+}
+
+enum StarSign {
+   VARSATOR = 0;
+   PESTI = 1;
+   BERBEC = 2;
+   TAUR = 3;
+   GEMENI = 4;
+   RAC = 5;
+   LEU = 6;
+   FECIOARA = 7;
+   BALANTA = 8;
+   SCORPION = 9;
+   SAGETATOR = 10;
+   CAPRICORN = 11;
 }

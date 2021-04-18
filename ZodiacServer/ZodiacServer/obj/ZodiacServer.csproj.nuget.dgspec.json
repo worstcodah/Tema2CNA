@@ -4,6 +4,258 @@
     "C:\\repos\\CNA\\Tema2\\ZodiacServer\\ZodiacServer\\ZodiacServer.csproj": {}
   },
   "projects": {
+    "C:\\repos\\CNA\\Tema2\\AutumnService\\AutumnService\\AutumnService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\repos\\CNA\\Tema2\\AutumnService\\AutumnService\\AutumnService.csproj",
+        "projectName": "AutumnService",
+        "projectPath": "C:\\repos\\CNA\\Tema2\\AutumnService\\AutumnService\\AutumnService.csproj",
+        "packagesPath": "C:\\Users\\dorin\\.nuget\\packages\\",
+        "outputPath": "C:\\repos\\CNA\\Tema2\\AutumnService\\AutumnService\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\dorin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Grpc.AspNetCore": {
+              "target": "Package",
+              "version": "[2.27.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\repos\\CNA\\Tema2\\SpringService\\SpringService\\SpringService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\repos\\CNA\\Tema2\\SpringService\\SpringService\\SpringService.csproj",
+        "projectName": "SpringService",
+        "projectPath": "C:\\repos\\CNA\\Tema2\\SpringService\\SpringService\\SpringService.csproj",
+        "packagesPath": "C:\\Users\\dorin\\.nuget\\packages\\",
+        "outputPath": "C:\\repos\\CNA\\Tema2\\SpringService\\SpringService\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\dorin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Grpc.AspNetCore": {
+              "target": "Package",
+              "version": "[2.27.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\repos\\CNA\\Tema2\\SummerService\\SummerService\\SummerService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\repos\\CNA\\Tema2\\SummerService\\SummerService\\SummerService.csproj",
+        "projectName": "SummerService",
+        "projectPath": "C:\\repos\\CNA\\Tema2\\SummerService\\SummerService\\SummerService.csproj",
+        "packagesPath": "C:\\Users\\dorin\\.nuget\\packages\\",
+        "outputPath": "C:\\repos\\CNA\\Tema2\\SummerService\\SummerService\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\dorin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Grpc.AspNetCore": {
+              "target": "Package",
+              "version": "[2.27.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\repos\\CNA\\Tema2\\WinterService\\WinterService\\WinterService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\repos\\CNA\\Tema2\\WinterService\\WinterService\\WinterService.csproj",
+        "projectName": "WinterService",
+        "projectPath": "C:\\repos\\CNA\\Tema2\\WinterService\\WinterService\\WinterService.csproj",
+        "packagesPath": "C:\\Users\\dorin\\.nuget\\packages\\",
+        "outputPath": "C:\\repos\\CNA\\Tema2\\WinterService\\WinterService\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\dorin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Grpc.AspNetCore": {
+              "target": "Package",
+              "version": "[2.27.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\repos\\CNA\\Tema2\\ZodiacServer\\ZodiacServer\\ZodiacServer.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -27,7 +279,20 @@
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\repos\\CNA\\Tema2\\AutumnService\\AutumnService\\AutumnService.csproj": {
+                "projectPath": "C:\\repos\\CNA\\Tema2\\AutumnService\\AutumnService\\AutumnService.csproj"
+              },
+              "C:\\repos\\CNA\\Tema2\\SpringService\\SpringService\\SpringService.csproj": {
+                "projectPath": "C:\\repos\\CNA\\Tema2\\SpringService\\SpringService\\SpringService.csproj"
+              },
+              "C:\\repos\\CNA\\Tema2\\SummerService\\SummerService\\SummerService.csproj": {
+                "projectPath": "C:\\repos\\CNA\\Tema2\\SummerService\\SummerService\\SummerService.csproj"
+              },
+              "C:\\repos\\CNA\\Tema2\\WinterService\\WinterService\\WinterService.csproj": {
+                "projectPath": "C:\\repos\\CNA\\Tema2\\WinterService\\WinterService\\WinterService.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

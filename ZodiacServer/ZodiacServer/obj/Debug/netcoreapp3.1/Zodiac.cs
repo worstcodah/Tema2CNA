@@ -25,20 +25,43 @@ namespace ZodiacServer {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChNQcm90b3Mvem9kaWFjLnByb3RvEgZ6b2RpYWMiOAoMQ2FsZW5kYXJEYXRl",
-            "EgsKA2RheRgBIAEoCRINCgVtb250aBgCIAEoCRIMCgR5ZWFyGAMgASgJIhgK",
-            "CFN0YXJTaWduEgwKBG5hbWUYASABKAkySAoPU3RhclNpZ25TZXJ2aWNlEjUK",
-            "C0dldFN0YXJTaWduEhQuem9kaWFjLkNhbGVuZGFyRGF0ZRoQLnpvZGlhYy5T",
-            "dGFyU2lnbkIPqgIMWm9kaWFjU2VydmVyYgZwcm90bzM="));
+            "EgsKA2RheRgBIAEoCRINCgVtb250aBgCIAEoCRIMCgR5ZWFyGAMgASgJIjYK",
+            "EFN0YXJTaWduUmVzcG9uc2USIgoIc3RhclNpZ24YASABKA4yEC56b2RpYWMu",
+            "U3RhclNpZ24qngEKCFN0YXJTaWduEgwKCFZBUlNBVE9SEAASCQoFUEVTVEkQ",
+            "ARIKCgZCRVJCRUMQAhIICgRUQVVSEAMSCgoGR0VNRU5JEAQSBwoDUkFDEAUS",
+            "BwoDTEVVEAYSDAoIRkVDSU9BUkEQBxILCgdCQUxBTlRBEAgSDAoIU0NPUlBJ",
+            "T04QCRINCglTQUdFVEFUT1IQChINCglDQVBSSUNPUk4QCzJXCg9TdGFyU2ln",
+            "blNlcnZpY2USRAoSR2V0U3RhclNpZ25SZXF1ZXN0EhQuem9kaWFjLkNhbGVu",
+            "ZGFyRGF0ZRoYLnpvZGlhYy5TdGFyU2lnblJlc3BvbnNlQg+qAgxab2RpYWNT",
+            "ZXJ2ZXJiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::ZodiacServer.StarSign), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::ZodiacServer.CalendarDate), global::ZodiacServer.CalendarDate.Parser, new[]{ "Day", "Month", "Year" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ZodiacServer.StarSign), global::ZodiacServer.StarSign.Parser, new[]{ "Name" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::ZodiacServer.StarSignResponse), global::ZodiacServer.StarSignResponse.Parser, new[]{ "StarSign" }, null, null, null, null)
           }));
     }
     #endregion
 
   }
+  #region Enums
+  public enum StarSign {
+    [pbr::OriginalName("VARSATOR")] Varsator = 0,
+    [pbr::OriginalName("PESTI")] Pesti = 1,
+    [pbr::OriginalName("BERBEC")] Berbec = 2,
+    [pbr::OriginalName("TAUR")] Taur = 3,
+    [pbr::OriginalName("GEMENI")] Gemeni = 4,
+    [pbr::OriginalName("RAC")] Rac = 5,
+    [pbr::OriginalName("LEU")] Leu = 6,
+    [pbr::OriginalName("FECIOARA")] Fecioara = 7,
+    [pbr::OriginalName("BALANTA")] Balanta = 8,
+    [pbr::OriginalName("SCORPION")] Scorpion = 9,
+    [pbr::OriginalName("SAGETATOR")] Sagetator = 10,
+    [pbr::OriginalName("CAPRICORN")] Capricorn = 11,
+  }
+
+  #endregion
+
   #region Messages
   public sealed partial class CalendarDate : pb::IMessage<CalendarDate> {
     private static readonly pb::MessageParser<CalendarDate> _parser = new pb::MessageParser<CalendarDate>(() => new CalendarDate());
@@ -225,11 +248,11 @@ namespace ZodiacServer {
 
   }
 
-  public sealed partial class StarSign : pb::IMessage<StarSign> {
-    private static readonly pb::MessageParser<StarSign> _parser = new pb::MessageParser<StarSign>(() => new StarSign());
+  public sealed partial class StarSignResponse : pb::IMessage<StarSignResponse> {
+    private static readonly pb::MessageParser<StarSignResponse> _parser = new pb::MessageParser<StarSignResponse>(() => new StarSignResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<StarSign> Parser { get { return _parser; } }
+    public static pb::MessageParser<StarSignResponse> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -242,55 +265,55 @@ namespace ZodiacServer {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public StarSign() {
+    public StarSignResponse() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public StarSign(StarSign other) : this() {
-      name_ = other.name_;
+    public StarSignResponse(StarSignResponse other) : this() {
+      starSign_ = other.starSign_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public StarSign Clone() {
-      return new StarSign(this);
+    public StarSignResponse Clone() {
+      return new StarSignResponse(this);
     }
 
-    /// <summary>Field number for the "name" field.</summary>
-    public const int NameFieldNumber = 1;
-    private string name_ = "";
+    /// <summary>Field number for the "starSign" field.</summary>
+    public const int StarSignFieldNumber = 1;
+    private global::ZodiacServer.StarSign starSign_ = global::ZodiacServer.StarSign.Varsator;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Name {
-      get { return name_; }
+    public global::ZodiacServer.StarSign StarSign {
+      get { return starSign_; }
       set {
-        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        starSign_ = value;
       }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as StarSign);
+      return Equals(other as StarSignResponse);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(StarSign other) {
+    public bool Equals(StarSignResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Name != other.Name) return false;
+      if (StarSign != other.StarSign) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Name.Length != 0) hash ^= Name.GetHashCode();
+      if (StarSign != global::ZodiacServer.StarSign.Varsator) hash ^= StarSign.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -304,9 +327,9 @@ namespace ZodiacServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Name.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Name);
+      if (StarSign != global::ZodiacServer.StarSign.Varsator) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) StarSign);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -316,8 +339,8 @@ namespace ZodiacServer {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Name.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      if (StarSign != global::ZodiacServer.StarSign.Varsator) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) StarSign);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -326,12 +349,12 @@ namespace ZodiacServer {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(StarSign other) {
+    public void MergeFrom(StarSignResponse other) {
       if (other == null) {
         return;
       }
-      if (other.Name.Length != 0) {
-        Name = other.Name;
+      if (other.StarSign != global::ZodiacServer.StarSign.Varsator) {
+        StarSign = other.StarSign;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -344,8 +367,8 @@ namespace ZodiacServer {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 10: {
-            Name = input.ReadString();
+          case 8: {
+            StarSign = (global::ZodiacServer.StarSign) input.ReadEnum();
             break;
           }
         }

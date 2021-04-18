@@ -256,6 +256,70 @@
         "runtime": {
           "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
+      },
+      "AutumnService/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Grpc.AspNetCore": "2.27.0"
+        },
+        "compile": {
+          "bin/placeholder/AutumnService.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AutumnService.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "SpringService/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Grpc.AspNetCore": "2.27.0"
+        },
+        "compile": {
+          "bin/placeholder/SpringService.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SpringService.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "SummerService/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Grpc.AspNetCore": "2.27.0"
+        },
+        "compile": {
+          "bin/placeholder/SummerService.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SummerService.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "WinterService/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Grpc.AspNetCore": "2.27.0"
+        },
+        "compile": {
+          "bin/placeholder/WinterService.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WinterService.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -621,11 +685,35 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "AutumnService/1.0.0": {
+      "type": "project",
+      "path": "../../AutumnService/AutumnService/AutumnService.csproj",
+      "msbuildProject": "../../AutumnService/AutumnService/AutumnService.csproj"
+    },
+    "SpringService/1.0.0": {
+      "type": "project",
+      "path": "../../SpringService/SpringService/SpringService.csproj",
+      "msbuildProject": "../../SpringService/SpringService/SpringService.csproj"
+    },
+    "SummerService/1.0.0": {
+      "type": "project",
+      "path": "../../SummerService/SummerService/SummerService.csproj",
+      "msbuildProject": "../../SummerService/SummerService/SummerService.csproj"
+    },
+    "WinterService/1.0.0": {
+      "type": "project",
+      "path": "../../WinterService/WinterService/WinterService.csproj",
+      "msbuildProject": "../../WinterService/WinterService/WinterService.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Grpc.AspNetCore >= 2.27.0"
+      "AutumnService >= 1.0.0",
+      "Grpc.AspNetCore >= 2.27.0",
+      "SpringService >= 1.0.0",
+      "SummerService >= 1.0.0",
+      "WinterService >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -654,7 +742,20 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\repos\\CNA\\Tema2\\AutumnService\\AutumnService\\AutumnService.csproj": {
+              "projectPath": "C:\\repos\\CNA\\Tema2\\AutumnService\\AutumnService\\AutumnService.csproj"
+            },
+            "C:\\repos\\CNA\\Tema2\\SpringService\\SpringService\\SpringService.csproj": {
+              "projectPath": "C:\\repos\\CNA\\Tema2\\SpringService\\SpringService\\SpringService.csproj"
+            },
+            "C:\\repos\\CNA\\Tema2\\SummerService\\SummerService\\SummerService.csproj": {
+              "projectPath": "C:\\repos\\CNA\\Tema2\\SummerService\\SummerService\\SummerService.csproj"
+            },
+            "C:\\repos\\CNA\\Tema2\\WinterService\\WinterService\\WinterService.csproj": {
+              "projectPath": "C:\\repos\\CNA\\Tema2\\WinterService\\WinterService\\WinterService.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

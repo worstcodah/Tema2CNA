@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZodiacServer", "ZodiacServer\ZodiacServer.csproj", "{85ACB343-1B9A-445E-9590-BCF9ECD44E73}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZodiacServer", "ZodiacServer\ZodiacServer.csproj", "{85ACB343-1B9A-445E-9590-BCF9ECD44E73}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutumnService", "..\AutumnService\AutumnService\AutumnService.csproj", "{EAD86BFA-02DD-46C0-ABF8-DB24DE813993}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinterService", "..\WinterService\WinterService\WinterService.csproj", "{5A925B14-3CE5-4043-A640-F5ABC669086F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpringService", "..\SpringService\SpringService\SpringService.csproj", "{DDC1B945-85B2-4DF7-83D6-DD60EA993842}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SummerService", "..\SummerService\SummerService\SummerService.csproj", "{6F9E7D99-5492-4AD0-93BF-98BAB3ADA11A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +23,22 @@ Global
 		{85ACB343-1B9A-445E-9590-BCF9ECD44E73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{85ACB343-1B9A-445E-9590-BCF9ECD44E73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{85ACB343-1B9A-445E-9590-BCF9ECD44E73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAD86BFA-02DD-46C0-ABF8-DB24DE813993}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAD86BFA-02DD-46C0-ABF8-DB24DE813993}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAD86BFA-02DD-46C0-ABF8-DB24DE813993}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAD86BFA-02DD-46C0-ABF8-DB24DE813993}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A925B14-3CE5-4043-A640-F5ABC669086F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A925B14-3CE5-4043-A640-F5ABC669086F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A925B14-3CE5-4043-A640-F5ABC669086F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A925B14-3CE5-4043-A640-F5ABC669086F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDC1B945-85B2-4DF7-83D6-DD60EA993842}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDC1B945-85B2-4DF7-83D6-DD60EA993842}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDC1B945-85B2-4DF7-83D6-DD60EA993842}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDC1B945-85B2-4DF7-83D6-DD60EA993842}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F9E7D99-5492-4AD0-93BF-98BAB3ADA11A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F9E7D99-5492-4AD0-93BF-98BAB3ADA11A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F9E7D99-5492-4AD0-93BF-98BAB3ADA11A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F9E7D99-5492-4AD0-93BF-98BAB3ADA11A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

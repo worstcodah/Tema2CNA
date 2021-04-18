@@ -1,8 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "CyqLp+INsk5Nnrs2HemFTnCG6mHUN1HQLhjjUZvLjC8NQXuQEJhSDaFvGE9/jB9sElrg4tGexrN3yAnNPFeh6w==",
+  "dgSpecHash": "WuvmvJbB7hJnbtUzJZcUX52Q/bYAvmvz18iJAX3d/plIWr5qZRLF2JyZqt4rKNOPxyThInh+Y4etsfNlxAIgEQ==",
   "success": true,
   "projectFilePath": "C:\\repos\\CNA\\Tema2\\ZodiacClient\\ZodiacClient\\ZodiacClient.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\dorin\\.nuget\\packages\\google.protobuf\\3.15.8\\google.protobuf.3.15.8.nupkg.sha512",
+    "C:\\Users\\dorin\\.nuget\\packages\\grpc.core\\2.37.0\\grpc.core.2.37.0.nupkg.sha512",
+    "C:\\Users\\dorin\\.nuget\\packages\\grpc.core.api\\2.37.0\\grpc.core.api.2.37.0.nupkg.sha512",
+    "C:\\Users\\dorin\\.nuget\\packages\\grpc.net.client\\2.36.0\\grpc.net.client.2.36.0.nupkg.sha512",
+    "C:\\Users\\dorin\\.nuget\\packages\\grpc.net.common\\2.36.0\\grpc.net.common.2.36.0.nupkg.sha512",
+    "C:\\Users\\dorin\\.nuget\\packages\\grpc.tools\\2.37.0\\grpc.tools.2.37.0.nupkg.sha512",
+    "C:\\Users\\dorin\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.0.3\\microsoft.extensions.logging.abstractions.3.0.3.nupkg.sha512",
+    "C:\\Users\\dorin\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.5.1\\system.diagnostics.diagnosticsource.4.5.1.nupkg.sha512",
+    "C:\\Users\\dorin\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\dorin\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512"
+  ],
   "logs": []
 }

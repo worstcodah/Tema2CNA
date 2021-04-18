@@ -9,5 +9,6 @@ namespace ZodiacServer.Constants
     {
         public const int MAX_DAY_VALUE = 31;
         public const int MAX_MONTH_VALUE = 12;
+        public const string CHANNEL_PORT = "https://localhost:5001";
     }
 }

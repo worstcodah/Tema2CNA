@@ -1,3 +1,7 @@
+C:\repos\CNA\Tema2\ZodiacServer\ZodiacServer\bin\Debug\netcoreapp3.1\AutumnService.exe
+C:\repos\CNA\Tema2\ZodiacServer\ZodiacServer\bin\Debug\netcoreapp3.1\SpringService.exe
+C:\repos\CNA\Tema2\ZodiacServer\ZodiacServer\bin\Debug\netcoreapp3.1\SummerService.exe
+C:\repos\CNA\Tema2\ZodiacServer\ZodiacServer\bin\Debug\netcoreapp3.1\WinterService.exe
 C:\repos\CNA\Tema2\ZodiacServer\ZodiacServer\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\repos\CNA\Tema2\ZodiacServer\ZodiacServer\bin\Debug\netcoreapp3.1\appsettings.json
 C:\repos\CNA\Tema2\ZodiacServer\ZodiacServer\bin\Debug\netcoreapp3.1\ZodiacServer.exe
@@ -13,6 +17,14 @@ C:\repos\CNA\Tema2\ZodiacServer\ZodiacServer\bin\Debug\netcoreapp3.1\Grpc.Core.A
 C:\repos\CNA\Tema2\ZodiacServer\ZodiacServer\bin\Debug\netcoreapp3.1\Grpc.Net.Client.dll
 C:\repos\CNA\Tema2\ZodiacServer\ZodiacServer\bin\Debug\netcoreapp3.1\Grpc.Net.ClientFactory.dll
 C:\repos\CNA\Tema2\ZodiacServer\ZodiacServer\bin\Debug\netcoreapp3.1\Grpc.Net.Common.dll
+C:\repos\CNA\Tema2\ZodiacServer\ZodiacServer\bin\Debug\netcoreapp3.1\AutumnService.dll
+C:\repos\CNA\Tema2\ZodiacServer\ZodiacServer\bin\Debug\netcoreapp3.1\SpringService.dll
+C:\repos\CNA\Tema2\ZodiacServer\ZodiacServer\bin\Debug\netcoreapp3.1\SummerService.dll
+C:\repos\CNA\Tema2\ZodiacServer\ZodiacServer\bin\Debug\netcoreapp3.1\WinterService.dll
+C:\repos\CNA\Tema2\ZodiacServer\ZodiacServer\bin\Debug\netcoreapp3.1\AutumnService.pdb
+C:\repos\CNA\Tema2\ZodiacServer\ZodiacServer\bin\Debug\netcoreapp3.1\SpringService.pdb
+C:\repos\CNA\Tema2\ZodiacServer\ZodiacServer\bin\Debug\netcoreapp3.1\SummerService.pdb
+C:\repos\CNA\Tema2\ZodiacServer\ZodiacServer\bin\Debug\netcoreapp3.1\WinterService.pdb
 C:\repos\CNA\Tema2\ZodiacServer\ZodiacServer\obj\Debug\netcoreapp3.1\ZodiacServer.csprojAssemblyReference.cache
 C:\repos\CNA\Tema2\ZodiacServer\ZodiacServer\obj\Debug\netcoreapp3.1\ZodiacServer.AssemblyInfoInputs.cache
 C:\repos\CNA\Tema2\ZodiacServer\ZodiacServer\obj\Debug\netcoreapp3.1\ZodiacServer.AssemblyInfo.cs

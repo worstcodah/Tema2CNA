@@ -1,15 +1,21 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <Protobuf Include="Protos\zodiac.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\zodiac.proto" GrpcServices="Both" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Grpc.AspNetCore" Version="2.27.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\AutumnService\AutumnService\AutumnService.csproj" />
+    <ProjectReference Include="..\..\SpringService\SpringService\SpringService.csproj" />
+    <ProjectReference Include="..\..\SummerService\SummerService\SummerService.csproj" />
+    <ProjectReference Include="..\..\WinterService\WinterService\WinterService.csproj" />
+  </ItemGroup>
 </Project>
