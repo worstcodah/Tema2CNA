@@ -9,5 +9,6 @@ namespace AutumnService.Constants
     {
         public const int MaxDayValue = 31;
         public const int MinDayValue = 1;
+        public const string AutumnIntervalsFilePath = "../../AutumnService/AutumnService/Resources/autumn.txt";
     }
 }

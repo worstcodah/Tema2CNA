@@ -9,5 +9,6 @@ namespace SpringService.Constants
     {
         public const int MaxDayValue = 31;
         public const int MinDayValue = 1;
+        public const string SpringIntervalsFilePath = "../../SpringService/SpringService/Resources/spring.txt";
     }
 }

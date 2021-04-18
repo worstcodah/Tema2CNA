@@ -28,7 +28,7 @@ namespace ZodiacServer
         {
             var calendarDate = Helper.Helper.ReplaceDashesWithSlashes(inputDate.InputCalendarDate.ToString());
             //Validari data calendar + exceptie catre client
-            if (!Helper.Helper.CheckForValidDate(calendarDate))
+            if (!Helper.Helper.IsValidDate(calendarDate))
             {
                 throw new RpcException(new Status(StatusCode.InvalidArgument, "String-ul introdus (" + calendarDate + ") nu este o data calendaristica valida !"));
             }
@@ -36,7 +36,7 @@ namespace ZodiacServer
             //Determinarea microserviciului si returnarea zodiei
             var channel = GrpcChannel.ForAddress(Constants.Constants.ChannelPort);
             var month = Convert.ToInt32(calendarDate.Split("/").ToList().ElementAt(0));
-            var calendarDateValues = Helper.Helper.GetDataValues(calendarDate);
+            var calendarDateValues = Helper.Helper.GetDateValues(calendarDate);
             switch (month)
             {
                 case 12:
@@ -94,7 +94,5 @@ namespace ZodiacServer
             }
             return Task.FromResult(new StarSignResponse { StarSign = StarSign.Undefined });
         }
-
-
     }
 }

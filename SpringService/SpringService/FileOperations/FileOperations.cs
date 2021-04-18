@@ -10,8 +10,7 @@ namespace SpringService.FileOperations
     {
         public static List<string> GetSpringZodiacIntervals()
         {
-            const string SpringStarSignsPath = "../../SpringService/SpringService/Resources/spring.txt";
-            var initialSpringStarSigns = File.ReadAllLines(SpringStarSignsPath).ToList();
+            var initialSpringStarSigns = File.ReadAllLines(Constants.Constants.SpringIntervalsFilePath).ToList();
             List<string> trimmedSpringStarSigns = new List<string>();
             foreach (var interval in initialSpringStarSigns)
             {

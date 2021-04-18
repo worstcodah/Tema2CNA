@@ -9,6 +9,6 @@ namespace WinterService.Constants
     {
         public const int MaxDayValue = 31;
         public const int MinDayValue = 1;
-        public const int LeapYearFebruaryLastDay = 28;
+        public const string WinterIntervalsFilePath = "../../WinterService/WinterService/Resources/winter.txt";
     }
 }

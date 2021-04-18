@@ -10,8 +10,7 @@ namespace AutumnService.FileOperations
     {
         public static List<string> GetAutumnZodiacIntervals()
         {
-            const string AutumnStarSignsPath = "../../AutumnService/AutumnService/Resources/autumn.txt";
-            var initialAutumnStarSigns = File.ReadAllLines(AutumnStarSignsPath).ToList();
+            var initialAutumnStarSigns = File.ReadAllLines(Constants.Constants.AutumnIntervalsFilePath).ToList();
             List<string> trimmedAutumnStarSigns = new List<string>();
             foreach (var interval in initialAutumnStarSigns)
             {

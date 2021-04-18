@@ -50,7 +50,6 @@ namespace AutumnService
                     {
                         var starSignString = lineContent.ElementAt(2);
                         return Task.FromResult(new StarSignResponse { StarSign = StringToStarSign(starSignString) });
-
                     }
                 }
                 if (Convert.ToInt32(calendarDate.Month) == Convert.ToInt32(secondIntervalMonth))
@@ -63,12 +62,9 @@ namespace AutumnService
                         return Task.FromResult(new StarSignResponse { StarSign = StringToStarSign(starSignString) });
                     }
                 }
-
             }
             return base.AutumnStarSignRequest(calendarDate, context);
-
         }
-
     }
 }
 

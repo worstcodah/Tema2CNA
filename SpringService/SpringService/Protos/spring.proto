@@ -4,9 +4,8 @@ option csharp_namespace = "SpringService";
 
 package zodiac;
 
-
 service SpringStarSignService {
-	rpc SpringStarSignRequest(CalendarDate) returns (StarSignResponse);
+  rpc SpringStarSignRequest(CalendarDate) returns (StarSignResponse);
 }
 
 message CalendarDate {

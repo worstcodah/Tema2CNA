@@ -5,7 +5,7 @@ option csharp_namespace = "ZodiacServer";
 package zodiac;
 
 service StarSignService {
-  rpc GetStarSignRequest (InputDate) returns (StarSignResponse);
+	rpc GetStarSignRequest (InputDate) returns (StarSignResponse);
 }
 
 message InputDate {

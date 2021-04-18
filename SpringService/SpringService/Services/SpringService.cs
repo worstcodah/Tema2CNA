@@ -61,10 +61,8 @@ namespace SpringService
                         return Task.FromResult(new StarSignResponse { StarSign = StringToStarSign(starSignString) });
                     }
                 }
-
             }
             return Task.FromResult(new StarSignResponse { StarSign = StarSign.Undefined });
         }
-
     }
 }

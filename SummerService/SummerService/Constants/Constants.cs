@@ -9,5 +9,6 @@ namespace SummerService.Constants
     {
         public const int MaxDayValue = 31;
         public const int MinDayValue = 1;
+        public const string SummerIntervalsFilePath = "../../SummerService/SummerService/Resources/summer.txt";
     }
 }

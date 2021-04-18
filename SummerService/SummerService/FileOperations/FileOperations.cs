@@ -10,8 +10,7 @@ namespace SummerService.FileOperations
     {
         public static List<string> GetSummerZodiacIntervals()
         {
-            const string SummerStarSignsPath = "../../SummerService/SummerService/Resources/summer.txt";
-            var initialSummerStarSigns = File.ReadAllLines(SummerStarSignsPath).ToList();
+            var initialSummerStarSigns = File.ReadAllLines(Constants.Constants.SummerIntervalsFilePath).ToList();
             List<string> trimmedSummerStarSigns = new List<string>();
             foreach (var interval in initialSummerStarSigns)
             {

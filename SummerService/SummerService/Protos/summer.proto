@@ -4,9 +4,8 @@ option csharp_namespace = "SummerService";
 
 package zodiac;
 
-
 service SummerStarSignService {
-	rpc SummerStarSignRequest(CalendarDate) returns (StarSignResponse);
+  rpc SummerStarSignRequest(CalendarDate) returns (StarSignResponse);
 }
 
 message CalendarDate {

@@ -9,7 +9,7 @@ namespace ZodiacServer.Helper
 {
     public static class Helper
     {
-        public static bool CheckForValidDate(string input)
+        public static bool IsValidDate(string input)
         {
             string[] formats = { "M/d/yyyy", "M/dd/yyyy", "MM/d/yyyy", "MM/dd/yyyy", "M/d/yyy", "M/dd/yyy", "MM/d/yyy", "MM/dd/yyy" };
             DateTime dateValue;
@@ -20,14 +20,14 @@ namespace ZodiacServer.Helper
                 return false;
         }
 
-        public static Tuple<string, string, string> GetDataValues(string input)
+        public static Tuple<string, string, string> GetDateValues(string input)
         {
             var separator = "/";
             String[] outputStrings = input.Split(separator, StringSplitOptions.RemoveEmptyEntries);
-
             var index = 0;
             string day, month, year;
             day = month = year = null;
+
             foreach (string output in outputStrings)
             {
                 if (Regex.IsMatch(output, @"^\d+$"))

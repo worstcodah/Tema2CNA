@@ -4,13 +4,12 @@ option csharp_namespace = "ZodiacClient";
 
 package zodiac;
 
-
 service StarSignService {
   rpc GetStarSignRequest (InputDate) returns (StarSignResponse);
 }
 
 message InputDate {
-	string inputCalendarDate = 1;
+  string inputCalendarDate = 1;
 }
 message StarSignResponse {
   StarSign starSign = 1;
