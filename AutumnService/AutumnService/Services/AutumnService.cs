@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutumnService.Constants;
 
 namespace AutumnService
 {
@@ -54,9 +55,9 @@ namespace AutumnService
                 }
                 if (calendarDate.Month == secondIntervalMonth && firstIntervalMonth != secondIntervalMonth)
                 {
-                    var intervalStartDay = Constants.Constants.MinDayValue;
-                    var intervalEndDay = secondInterval.ElementAt(0);
-                    if (Convert.ToInt32(intervalStartDay) <= Convert.ToInt32(calendarDate.Day) && Convert.ToInt32(intervalEndDay) >= Convert.ToInt32(calendarDate.Day))
+                    var intervalStartDay = Convert.ToInt32(Constants.Constants.MinDayValue);
+                    var intervalEndDay = Convert.ToInt32(secondInterval.ElementAt(0));
+                    if (intervalStartDay <= Convert.ToInt32(calendarDate.Day) && intervalEndDay >= Convert.ToInt32(calendarDate.Day))
                     {
                         var starSignString = lineContent.ElementAt(2);
                         return Task.FromResult(new StarSignResponse { StarSign = StringToStarSign(starSignString) });

@@ -27,13 +27,13 @@ namespace WinterService {
             "ChNQcm90b3Mvd2ludGVyLnByb3RvEgZ6b2RpYWMiOAoMQ2FsZW5kYXJEYXRl",
             "EgsKA2RheRgBIAEoCRINCgVtb250aBgCIAEoCRIMCgR5ZWFyGAMgASgJIjYK",
             "EFN0YXJTaWduUmVzcG9uc2USIgoIc3RhclNpZ24YASABKA4yEC56b2RpYWMu",
-            "U3RhclNpZ24qngEKCFN0YXJTaWduEgwKCFZBUlNBVE9SEAASCQoFUEVTVEkQ",
+            "U3RhclNpZ24qrQEKCFN0YXJTaWduEgwKCFZBUlNBVE9SEAASCQoFUEVTVEkQ",
             "ARIKCgZCRVJCRUMQAhIICgRUQVVSEAMSCgoGR0VNRU5JEAQSBwoDUkFDEAUS",
             "BwoDTEVVEAYSDAoIRkVDSU9BUkEQBxILCgdCQUxBTlRBEAgSDAoIU0NPUlBJ",
-            "T04QCRINCglTQUdFVEFUT1IQChINCglDQVBSSUNPUk4QCzJgChVXaW50ZXJT",
-            "dGFyU2lnblNlcnZpY2USRwoVV2ludGVyU3RhclNpZ25SZXF1ZXN0EhQuem9k",
-            "aWFjLkNhbGVuZGFyRGF0ZRoYLnpvZGlhYy5TdGFyU2lnblJlc3BvbnNlQhCq",
-            "Ag1XaW50ZXJTZXJ2aWNlYgZwcm90bzM="));
+            "T04QCRINCglTQUdFVEFUT1IQChINCglDQVBSSUNPUk4QCxINCglVTkRFRklO",
+            "RUQQDDJgChVXaW50ZXJTdGFyU2lnblNlcnZpY2USRwoVV2ludGVyU3RhclNp",
+            "Z25SZXF1ZXN0EhQuem9kaWFjLkNhbGVuZGFyRGF0ZRoYLnpvZGlhYy5TdGFy",
+            "U2lnblJlc3BvbnNlQhCqAg1XaW50ZXJTZXJ2aWNlYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::WinterService.StarSign), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -58,6 +58,7 @@ namespace WinterService {
     [pbr::OriginalName("SCORPION")] Scorpion = 9,
     [pbr::OriginalName("SAGETATOR")] Sagetator = 10,
     [pbr::OriginalName("CAPRICORN")] Capricorn = 11,
+    [pbr::OriginalName("UNDEFINED")] Undefined = 12,
   }
 
   #endregion
