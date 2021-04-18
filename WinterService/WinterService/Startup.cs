@@ -31,7 +31,7 @@ namespace WinterService
             
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapGrpcService<WinterService>();
+                endpoints.MapGrpcService<WinterService>().RequireHost("*:5001");
 
                 endpoints.MapGet("/", async context =>
                 {

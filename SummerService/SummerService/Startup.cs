@@ -31,7 +31,7 @@ namespace SummerService
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapGrpcService<SummerService>().RequireHost(":5001");
+                endpoints.MapGrpcService<SummerService>().RequireHost("*:5001");
 
                 endpoints.MapGet("/", async context =>
                 {

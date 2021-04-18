@@ -31,7 +31,7 @@ namespace SpringService
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapGrpcService<SpringService>().RequireHost(":5001");
+                endpoints.MapGrpcService<SpringService>().RequireHost("*:5001");
 
                 endpoints.MapGet("/", async context =>
                 {

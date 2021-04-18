@@ -31,7 +31,7 @@ namespace AutumnService
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapGrpcService<AutumnService>();
+                endpoints.MapGrpcService<AutumnService>().RequireHost("*:5001");
 
                 endpoints.MapGet("/", async context =>
                 {
