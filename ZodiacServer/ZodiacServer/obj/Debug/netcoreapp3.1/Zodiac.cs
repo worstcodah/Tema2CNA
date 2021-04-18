@@ -24,18 +24,18 @@ namespace ZodiacServer {
     static ZodiacReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChNQcm90b3Mvem9kaWFjLnByb3RvEgZ6b2RpYWMaHmdvb2dsZS9wcm90b2J1",
-            "Zi93cmFwcGVycy5wcm90byImCglJbnB1dERhdGUSGQoRaW5wdXRDYWxlbmRh",
-            "ckRhdGUYASABKAkiNgoQU3RhclNpZ25SZXNwb25zZRIiCghzdGFyU2lnbhgB",
-            "IAEoDjIQLnpvZGlhYy5TdGFyU2lnbiqtAQoIU3RhclNpZ24SDQoJVU5ERUZJ",
-            "TkVEEAASDAoIVkFSU0FUT1IQARIJCgVQRVNUSRACEgoKBkJFUkJFQxADEggK",
-            "BFRBVVIQBBIKCgZHRU1FTkkQBRIHCgNSQUMQBhIHCgNMRVUQBxIMCghGRUNJ",
-            "T0FSQRAIEgsKB0JBTEFOVEEQCRIMCghTQ09SUElPThAKEg0KCVNBR0VUQVRP",
-            "UhALEg0KCUNBUFJJQ09SThAMMlQKD1N0YXJTaWduU2VydmljZRJBChJHZXRT",
-            "dGFyU2lnblJlcXVlc3QSES56b2RpYWMuSW5wdXREYXRlGhguem9kaWFjLlN0",
-            "YXJTaWduUmVzcG9uc2VCD6oCDFpvZGlhY1NlcnZlcmIGcHJvdG8z"));
+            "ChNQcm90b3Mvem9kaWFjLnByb3RvEgZ6b2RpYWMiJgoJSW5wdXREYXRlEhkK",
+            "EWlucHV0Q2FsZW5kYXJEYXRlGAEgASgJIjYKEFN0YXJTaWduUmVzcG9uc2US",
+            "IgoIc3RhclNpZ24YASABKA4yEC56b2RpYWMuU3RhclNpZ24qrQEKCFN0YXJT",
+            "aWduEg0KCVVOREVGSU5FRBAAEgwKCFZBUlNBVE9SEAESCQoFUEVTVEkQAhIK",
+            "CgZCRVJCRUMQAxIICgRUQVVSEAQSCgoGR0VNRU5JEAUSBwoDUkFDEAYSBwoD",
+            "TEVVEAcSDAoIRkVDSU9BUkEQCBILCgdCQUxBTlRBEAkSDAoIU0NPUlBJT04Q",
+            "ChINCglTQUdFVEFUT1IQCxINCglDQVBSSUNPUk4QDDJUCg9TdGFyU2lnblNl",
+            "cnZpY2USQQoSR2V0U3RhclNpZ25SZXF1ZXN0EhEuem9kaWFjLklucHV0RGF0",
+            "ZRoYLnpvZGlhYy5TdGFyU2lnblJlc3BvbnNlQg+qAgxab2RpYWNTZXJ2ZXJi",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
+          new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::ZodiacServer.StarSign), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::ZodiacServer.InputDate), global::ZodiacServer.InputDate.Parser, new[]{ "InputCalendarDate" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ZodiacServer.StarSignResponse), global::ZodiacServer.StarSignResponse.Parser, new[]{ "StarSign" }, null, null, null, null)

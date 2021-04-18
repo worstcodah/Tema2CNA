@@ -15,7 +15,7 @@ namespace SummerService.FileOperations
             List<string> trimmedSummerStarSigns = new List<string>();
             foreach (var interval in initialSummerStarSigns)
             {
-                trimmedSummerStarSigns.Add(interval.Trim());
+                trimmedSummerStarSigns.Add(interval.Replace(" ", String.Empty));
             }
 
             return trimmedSummerStarSigns;

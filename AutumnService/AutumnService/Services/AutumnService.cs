@@ -42,7 +42,7 @@ namespace AutumnService
                 var firstIntervalMonth = firstInterval.ElementAt(1);
                 var secondIntervalMonth = secondInterval.ElementAt(1);
 
-                if (calendarDate.Month == firstIntervalMonth)
+                if (Convert.ToInt32(calendarDate.Month) == Convert.ToInt32(firstIntervalMonth))
                 {
                     var intervalStartDay = Convert.ToInt32(firstInterval.ElementAt(0));
                     var intervalEndDay = firstIntervalMonth == secondIntervalMonth ? Convert.ToInt32(secondInterval.ElementAt(0)) : Constants.Constants.MaxDayValue;
@@ -53,7 +53,7 @@ namespace AutumnService
 
                     }
                 }
-                if (calendarDate.Month == secondIntervalMonth && firstIntervalMonth != secondIntervalMonth)
+                if (Convert.ToInt32(calendarDate.Month) == Convert.ToInt32(secondIntervalMonth) && firstIntervalMonth != secondIntervalMonth)
                 {
                     var intervalStartDay = Convert.ToInt32(Constants.Constants.MinDayValue);
                     var intervalEndDay = Convert.ToInt32(secondInterval.ElementAt(0));

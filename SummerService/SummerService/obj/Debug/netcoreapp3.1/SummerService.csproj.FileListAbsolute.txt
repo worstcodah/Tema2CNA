@@ -25,3 +25,4 @@ C:\repos\CNA\Tema2\SummerService\SummerService\obj\Debug\netcoreapp3.1\SummerSer
 C:\repos\CNA\Tema2\SummerService\SummerService\obj\Debug\netcoreapp3.1\SummerService.dll
 C:\repos\CNA\Tema2\SummerService\SummerService\obj\Debug\netcoreapp3.1\SummerService.pdb
 C:\repos\CNA\Tema2\SummerService\SummerService\obj\Debug\netcoreapp3.1\SummerService.genruntimeconfig.cache
+C:\repos\CNA\Tema2\SummerService\SummerService\obj\Debug\netcoreapp3.1\SummerService.csprojAssemblyReference.cache

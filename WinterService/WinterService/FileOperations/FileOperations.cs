@@ -15,7 +15,7 @@ namespace WinterService.FileOperations
             List<string> trimmedWinterStarSigns = new List<string>();
             foreach (var interval in initialWinterStarSigns)
             {
-                trimmedWinterStarSigns.Add(interval.Trim());
+                trimmedWinterStarSigns.Add(interval.Replace(" ", String.Empty));
             }
 
             return trimmedWinterStarSigns;

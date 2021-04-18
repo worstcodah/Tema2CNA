@@ -15,7 +15,7 @@ namespace SpringService.FileOperations
             List<string> trimmedSpringStarSigns = new List<string>();
             foreach (var interval in initialSpringStarSigns)
             {
-                trimmedSpringStarSigns.Add(interval.Trim());
+                trimmedSpringStarSigns.Add(interval.Replace(" ", String.Empty));
             }
 
             return trimmedSpringStarSigns;

@@ -11,7 +11,7 @@ namespace ZodiacServer.Helper
     {
         public static bool CheckForValidDate(string input)
         {
-            string[] formats = { "d/M/yyyy", "dd/M/yyyy", "d/MM/yyyy", "dd/MM/yyyy" };
+            string[] formats = { "M/d/yyyy", "M/dd/yyyy", "MM/d/yyyy", "MM/dd/yyyy", "M/d/yyy", "M/dd/yyy", "MM/d/yyy", "MM/dd/yyy" };
             DateTime dateValue;
 
             if (DateTime.TryParseExact(input, formats, new CultureInfo("en-US"), DateTimeStyles.None, out dateValue))
@@ -34,23 +34,22 @@ namespace ZodiacServer.Helper
                 {
                     switch (index)
                     {
-                        case 0: day = output; break;
-                        case 1: month = output; break;
+                        case 0: month = output; break;
+                        case 1: day = output; break;
                         case 2: year = output; break;
                         default: break;
                     }
                 }
                 ++index;
             }
-
-            return Tuple.Create(day, month, year);
+            return Tuple.Create(month, day, year);
         }
 
-        public static void ReplaceDashes(string calendarDate)
+        public static string ReplaceDashesWithSlashes(string calendarDate)
         {
-            var replaceDash = new Regex(@"-");
-            String separator = "/";
-            calendarDate = replaceDash.Replace(calendarDate, separator);
+            var dash = "-";
+            var separator = "/";
+            return Regex.Replace(calendarDate, dash, separator);
         }
     }
 }

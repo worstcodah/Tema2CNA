@@ -15,7 +15,7 @@ namespace AutumnService.FileOperations
             List<string> trimmedAutumnStarSigns = new List<string>();
             foreach (var interval in initialAutumnStarSigns)
             {
-                trimmedAutumnStarSigns.Add(interval.Trim());
+                trimmedAutumnStarSigns.Add(interval.Replace(" ", String.Empty));
             }
 
             return trimmedAutumnStarSigns;

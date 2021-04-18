@@ -32,10 +32,6 @@ namespace WinterService
             return StarSign.Undefined;
         }
 
-        public bool IsLeapYear(string year)
-        {
-            return Convert.ToInt32(year) % 4 == 0;
-        }
         public override Task<StarSignResponse> WinterStarSignRequest(CalendarDate calendarDate, ServerCallContext context)
         {
             var winterStarSigns = FileOperations.FileOperations.GetWinterZodiacIntervals();
@@ -47,18 +43,11 @@ namespace WinterService
                 var firstIntervalMonth = firstInterval.ElementAt(1);
                 var secondIntervalMonth = secondInterval.ElementAt(1);
 
-                if (calendarDate.Month == firstIntervalMonth)
+                if (Convert.ToInt32(calendarDate.Month) == Convert.ToInt32(firstIntervalMonth))
                 {
                     var intervalStartDay = Convert.ToInt32(firstInterval.ElementAt(0));
-                    int intervalEndDay;
-                    if (IsLeapYear(calendarDate.Year) && calendarDate.Month.Equals("February"))
-                    {
-                        intervalEndDay = Constants.Constants.LeapYearFebruaryLastDay;
-                    }
-                    else
-                    {
-                         intervalEndDay = firstIntervalMonth == secondIntervalMonth ? Convert.ToInt32(secondInterval.ElementAt(0)) : Constants.Constants.MaxDayValue;
-                    }
+                    var intervalEndDay = firstIntervalMonth == secondIntervalMonth ? Convert.ToInt32(secondInterval.ElementAt(0)) : Constants.Constants.MaxDayValue;
+
                     if (intervalStartDay <= Convert.ToInt32(calendarDate.Day) && intervalEndDay >= Convert.ToInt32(calendarDate.Day))
                     {
                         var starSignString = lineContent.ElementAt(2);
@@ -66,7 +55,7 @@ namespace WinterService
 
                     }
                 }
-                if (calendarDate.Month == secondIntervalMonth && firstIntervalMonth != secondIntervalMonth)
+                if (Convert.ToInt32(calendarDate.Month) == Convert.ToInt32(secondIntervalMonth) && firstIntervalMonth != secondIntervalMonth)
                 {
                     var intervalStartDay = Convert.ToInt32(Constants.Constants.MinDayValue);
                     var intervalEndDay = Convert.ToInt32(secondInterval.ElementAt(0));

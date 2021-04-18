@@ -22,23 +22,22 @@ namespace ZodiacServer
             _logger = logger;
         }
 
+        //In cazul in care se face run cu debugger-ul, nu se va mai opri in momentul in care se arunca exceptie in if.
+        [System.Diagnostics.DebuggerHidden]
         public override Task<StarSignResponse> GetStarSignRequest(InputDate inputDate, ServerCallContext context)
         {
-            var calendarDate = inputDate.InputCalendarDate.ToString();
-            Helper.Helper.ReplaceDashes(calendarDate);
-            
-            //Validari data calendar + exceptie catre client.
-
+            var calendarDate = Helper.Helper.ReplaceDashesWithSlashes(inputDate.InputCalendarDate.ToString());
+            //Validari data calendar + exceptie catre client
             if (!Helper.Helper.CheckForValidDate(calendarDate))
             {
-                throw new RpcException(new Status(StatusCode.InvalidArgument, "Data introdusa nu este valida !"));
+                throw new RpcException(new Status(StatusCode.InvalidArgument, "String-ul introdus (" + calendarDate + ") nu este o data calendaristica valida !"));
             }
 
-            //Zodii
+            //Determinarea microserviciului si returnarea zodiei
             var channel = GrpcChannel.ForAddress(Constants.Constants.ChannelPort);
-            var month = Convert.ToInt32(calendarDate.Split("/").ToList().ElementAt(1));
+            var month = Convert.ToInt32(calendarDate.Split("/").ToList().ElementAt(0));
             var calendarDateValues = Helper.Helper.GetDataValues(calendarDate);
-            switch (Convert.ToInt32(month))
+            switch (month)
             {
                 case 12:
                 case 1:
@@ -47,8 +46,8 @@ namespace ZodiacServer
                         var client = new WinterService.WinterStarSignService.WinterStarSignServiceClient(channel);
                         var starSign = client.WinterStarSignRequest(new WinterService.CalendarDate
                         {
-                            Day = calendarDateValues.Item1,
-                            Month = calendarDateValues.Item2,
+                            Month = calendarDateValues.Item1,
+                            Day = calendarDateValues.Item2,
                             Year = calendarDateValues.Item3
                         });
                         return Task.FromResult(new StarSignResponse { StarSign = (StarSign)starSign.StarSign });
@@ -60,8 +59,8 @@ namespace ZodiacServer
                         var client = new SpringService.SpringStarSignService.SpringStarSignServiceClient(channel);
                         var starSign = client.SpringStarSignRequest(new SpringService.CalendarDate
                         {
-                            Day = calendarDateValues.Item1,
-                            Month = calendarDateValues.Item2,
+                            Month = calendarDateValues.Item1,
+                            Day = calendarDateValues.Item2,
                             Year = calendarDateValues.Item3
                         });
                         return Task.FromResult(new StarSignResponse { StarSign = (StarSign)starSign.StarSign });
@@ -73,8 +72,8 @@ namespace ZodiacServer
                         var client = new SummerService.SummerStarSignService.SummerStarSignServiceClient(channel);
                         var starSign = client.SummerStarSignRequest(new SummerService.CalendarDate
                         {
-                            Day = calendarDateValues.Item1,
-                            Month = calendarDateValues.Item2,
+                            Month = calendarDateValues.Item1,
+                            Day = calendarDateValues.Item2,
                             Year = calendarDateValues.Item3
                         });
                         return Task.FromResult(new StarSignResponse { StarSign = (StarSign)starSign.StarSign });
@@ -86,14 +85,13 @@ namespace ZodiacServer
                         var client = new AutumnService.AutumnStarSignService.AutumnStarSignServiceClient(channel);
                         var starSign = client.AutumnStarSignRequest(new AutumnService.CalendarDate
                         {
-                            Day = calendarDateValues.Item1,
-                            Month = calendarDateValues.Item2,
+                            Month = calendarDateValues.Item1,
+                            Day = calendarDateValues.Item2,
                             Year = calendarDateValues.Item3
                         });
                         return Task.FromResult(new StarSignResponse { StarSign = (StarSign)starSign.StarSign });
                     }
             }
-
             return Task.FromResult(new StarSignResponse { StarSign = StarSign.Undefined });
         }
 
