@@ -10,13 +10,14 @@ namespace WinterService.FileOperations
     {
         public static List<string> GetWinterZodiacIntervals()
         {
-            var initialWinterStarSigns = File.ReadAllLines(Constants.Constants.WinterIntervalsFilePath).ToList();
-            List<string> trimmedWinterStarSigns = new List<string>();
-            foreach (var interval in initialWinterStarSigns)
+            var initialWinterIntervals = File.ReadAllLines(Constants.Constants.WinterIntervalsFilePath).ToList();
+            var trimmedWinterIntervals = new List<string>();
+            foreach (var interval in initialWinterIntervals)
             {
-                trimmedWinterStarSigns.Add(interval.Replace(" ", String.Empty));
+                trimmedWinterIntervals.Add(interval.Replace(" ", String.Empty));
             }
-            return trimmedWinterStarSigns;
+
+            return trimmedWinterIntervals;
         }
     }
 }

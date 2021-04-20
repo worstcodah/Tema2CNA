@@ -65,7 +65,7 @@ namespace WinterService
                     }
                 }
             }
-            return base.WinterStarSignRequest(calendarDate, context);
+            return Task.FromResult(new StarSignResponse { StarSign = StarSign.Undefined });
         }
     }
 }

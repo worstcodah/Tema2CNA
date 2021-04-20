@@ -10,14 +10,14 @@ namespace SpringService.FileOperations
     {
         public static List<string> GetSpringZodiacIntervals()
         {
-            var initialSpringStarSigns = File.ReadAllLines(Constants.Constants.SpringIntervalsFilePath).ToList();
-            List<string> trimmedSpringStarSigns = new List<string>();
-            foreach (var interval in initialSpringStarSigns)
+            var initialSpringIntervals = File.ReadAllLines(Constants.Constants.SpringIntervalsFilePath).ToList();
+            var trimmedSpringIntervals = new List<string>();
+            foreach (var interval in initialSpringIntervals)
             {
-                trimmedSpringStarSigns.Add(interval.Replace(" ", String.Empty));
+                trimmedSpringIntervals.Add(interval.Replace(" ", String.Empty));
             }
 
-            return trimmedSpringStarSigns;
+            return trimmedSpringIntervals;
         }
     }
 }

@@ -63,7 +63,7 @@ namespace AutumnService
                     }
                 }
             }
-            return base.AutumnStarSignRequest(calendarDate, context);
+            return Task.FromResult(new StarSignResponse { StarSign = StarSign.Undefined });
         }
     }
 }

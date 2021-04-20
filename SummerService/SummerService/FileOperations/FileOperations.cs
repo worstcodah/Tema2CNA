@@ -10,14 +10,14 @@ namespace SummerService.FileOperations
     {
         public static List<string> GetSummerZodiacIntervals()
         {
-            var initialSummerStarSigns = File.ReadAllLines(Constants.Constants.SummerIntervalsFilePath).ToList();
-            List<string> trimmedSummerStarSigns = new List<string>();
-            foreach (var interval in initialSummerStarSigns)
+            var initialSummerIntervals = File.ReadAllLines(Constants.Constants.SummerIntervalsFilePath).ToList();
+            var trimmedSummerIntervals = new List<string>();
+            foreach (var interval in initialSummerIntervals)
             {
-                trimmedSummerStarSigns.Add(interval.Replace(" ", String.Empty));
+                trimmedSummerIntervals.Add(interval.Replace(" ", String.Empty));
             }
 
-            return trimmedSummerStarSigns;
+            return trimmedSummerIntervals;
         }
     }
 }

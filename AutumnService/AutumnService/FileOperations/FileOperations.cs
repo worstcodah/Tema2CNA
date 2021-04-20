@@ -10,14 +10,14 @@ namespace AutumnService.FileOperations
     {
         public static List<string> GetAutumnZodiacIntervals()
         {
-            var initialAutumnStarSigns = File.ReadAllLines(Constants.Constants.AutumnIntervalsFilePath).ToList();
-            List<string> trimmedAutumnStarSigns = new List<string>();
-            foreach (var interval in initialAutumnStarSigns)
+            var initialAutumnIntervals = File.ReadAllLines(Constants.Constants.AutumnIntervalsFilePath).ToList();
+            var trimmedAutumnIntervals = new List<string>();
+            foreach (var interval in initialAutumnIntervals)
             {
-                trimmedAutumnStarSigns.Add(interval.Replace(" ", String.Empty));
+                trimmedAutumnIntervals.Add(interval.Replace(" ", String.Empty));
             }
 
-            return trimmedAutumnStarSigns;
+            return trimmedAutumnIntervals;
         }
     }
 }
